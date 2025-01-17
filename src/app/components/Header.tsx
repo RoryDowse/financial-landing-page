@@ -4,6 +4,8 @@ import Link from "next/link";
 import { FaBars, FaTimes, FaSearch } from "react-icons/fa";
 import { useState } from "react";
 
+import { InfinityRewardsCard } from "@/app/models/CreditCard";
+
 
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -27,7 +29,7 @@ export default function Header() {
             </div>
 
             {/* Company Name */}
-            <h1>Empower Bank</h1>
+            <h1>{InfinityRewardsCard.bankName}</h1>
 
             {/* Mobile Menu */}
             {/* <nav

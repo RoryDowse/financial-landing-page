@@ -1,9 +1,19 @@
 import { HeroProps } from "./Hero";
 import { Offer } from "./Offer";
 import { FeaturesAndBenefitsProps } from "./FeaturesAndBenefits";
+import { HowItWorksProps } from "./HowItWorks";
 
-// Define the CreditCard class
-export class CreditCard {
+// Define the Bank superclass
+export class Bank {
+    bankName: string;
+
+    constructor(bankName: string) {
+        this.bankName = bankName;
+    }
+}
+
+// Define the CreditCard subclass
+export class CreditCard extends Bank {
     name: string;
     description: string;
     link: string;
@@ -13,13 +23,14 @@ export class CreditCard {
     hero: HeroProps[];
     offers?: Offer[];
     featuresAndBenefits?: FeaturesAndBenefitsProps[];
-    // howItWorks?: HowItWorks[];
+    howItWorks?: HowItWorksProps[];
     // testimonials?: Testimonial[];
     // callToAction: CallToAction;
     // faq?: FAQ[];
 
     // Constructor to initialize a CreditCard instance
     constructor(
+        bankName: string,
         name: string,
         description: string,
         link: string,
@@ -29,12 +40,13 @@ export class CreditCard {
         hero?: HeroProps[],
         offers?: Offer[],
         featuresAndBenefits?: FeaturesAndBenefitsProps[],
-        // howItWorks?: HowItWorks[],
+        howItWorks?: HowItWorksProps[],
         // testimonials?: Testimonial[],
         // callToAction: CallToAction,
         // faq?: FAQ[]
     ) {
         // Assign values to instance properties
+        super(bankName);
         this.name = name;
         this.description = description;
         this.link = link;
@@ -44,15 +56,18 @@ export class CreditCard {
         this.hero = hero || [];
         this.offers = offers;
         this.featuresAndBenefits = featuresAndBenefits;
-        // this.howItWorks = howItWorks;
+        this.howItWorks = howItWorks;
         // this.testimonials = testimonials;
         // this.callToAction = callToAction;
         // this.faq = faq;
     }
 }
 
+export const empowerBank = new Bank("Empower Bank");
+
 // Create an instance of the CreditCard class
 export const InfinityRewardsCard = new CreditCard(
+    empowerBank.bankName,
     "Infinity Rewards Credit Card",
     "Get rewards for every dollar you spend.",
     "",
@@ -63,6 +78,7 @@ export const InfinityRewardsCard = new CreditCard(
 
 InfinityRewardsCard.hero = [
     {
+        image: "/images/credit-card.webp",
         name: InfinityRewardsCard.name,
         applyNowLink: InfinityRewardsCard.link,
         featureOne: "Earn a $500 welcome bonus when you spend $1,000 in the first 3 months.",
@@ -100,5 +116,20 @@ InfinityRewardsCard.featuresAndBenefits = [
         feature: "AdventureX Travel Bookings",
         benefit: "Receive bonus points on all travel bookings, including flights, hotels, and vacation packages through AdventureX Travel Agency, a leading adventure travel provider.",
         info: "AdventureX Travel Agency specializes in curating unique travel experiences for explorers, adventurers, and wanderlust travelers. Whether you're booking a flight, hotel, or an all-inclusive vacation package, you can earn bonus points on every booking made using your Infinity Rewards Card. These points can be redeemed for discounts on future trips, helping you travel more while enjoying exclusive benefits.",
+    },
+];
+
+InfinityRewardsCard.howItWorks = [
+    {
+        redeemMethod: `${InfinityRewardsCard.bankName} Account Credit`,
+        description: `Redeem your points directly as a statement credit towards your ${InfinityRewardsCard.bankName} account, reducing your balance or covering a recent purchase.`,
+    },
+    {
+        redeemMethod: `${InfinityRewardsCard.bankName} Gift Cards`,
+        description: `Convert your points into ${InfinityRewardsCard.bankName}-branded gift cards, which can be used for everyday shopping or given as a thoughtful gift to someone special.`,
+    },
+    {
+        redeemMethod: `${InfinityRewardsCard.bankName} Loan Discount`,
+        description: `Use your points to earn a discount on personal loans or mortgages offered through ${InfinityRewardsCard.bankName}, helping you save on interest and fees for your financial needs.`,
     },
 ];
