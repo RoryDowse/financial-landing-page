@@ -8,7 +8,7 @@ export default function Hero() {
     return (
         <section>
             <Image
-                // src and alt must be manually set
+                // src and alt must be manually set - or use html img tag
                 src='/images/credit-card.webp' // Public folder root
                 alt='Infinity Rewards Credit Card'
                 width={1600}
