@@ -65,11 +65,11 @@ export class CreditCard extends Bank {
     }
 }
 
-export const empowerBank = new Bank("Empower Bank");
+export const EmpowerBank = new Bank("Empower Bank");
 
 // Create an instance of the CreditCard class
 export const InfinityRewardsCard = new CreditCard(
-    empowerBank.bankName,
+    EmpowerBank.bankName,
     "Infinity Rewards Credit Card",
     "Get rewards for every dollar you spend.",
     "",
