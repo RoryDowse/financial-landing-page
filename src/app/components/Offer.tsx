@@ -1,4 +1,6 @@
+import { InfinityRewardsCard } from "@/app/models/CreditCard";
 import { FaGift, FaPercentage } from "react-icons/fa";
+import Link from "next/link";
 
 export default function OffersPage() {
     return (
@@ -6,19 +8,33 @@ export default function OffersPage() {
             <div>
                 <FaGift />
                 <div>
-                    <h3>3% Rewards Cashback</h3>
+                    <h3>{InfinityRewardsCard.offers?.[0].name}</h3>
                     <p>
-                        Earn unlimited 3% cashback on every purchase.{" "}
-                        <a href="/rewards-conditions">Learn More</a>
+                        {InfinityRewardsCard.offers?.[0].description}
+                    </p>
+                    <p>
+                        <Link 
+                        href="{InfinityRewardsCard.offers?.[0].link}"
+                        aria-label="{InfinityRewardsCard.offers?.[0].name} Conditions">
+                            Conditions
+                        </Link>
                     </p>
                 </div>
             </div>
             <div>
                 <FaPercentage />
                 <div>
-                    <h3>0% Intro APR</h3>
+                    <h3>{InfinityRewardsCard.offers?.[1].name}</h3>
                     <p>
-                        Get 0% intro APR for 12 months.
+                        {InfinityRewardsCard.offers?.[1].description}
+                    </p>
+                    <p>
+                        <Link 
+                        href="{InfinityRewardsCard.offers?.[1].link}"
+                        aria-label="{InfinityRewardsCard.offers?.[1].name} Conditions"
+                        >
+                            Conditions
+                        </Link>
                     </p>
                 </div>
             </div>
