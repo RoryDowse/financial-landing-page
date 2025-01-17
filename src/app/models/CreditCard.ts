@@ -1,8 +1,9 @@
 import { HeroProps } from "./Hero";
-import { Offer } from "./Offer";
+import { OfferProps } from "./Offer";
 import { FeaturesAndBenefitsProps } from "./FeaturesAndBenefits";
 import { HowItWorksProps } from "./HowItWorks";
-import { Testimonial } from "./Testimonials";
+import { TestimonialProps } from "./Testimonials";
+import { CallToActionProps } from "./CallToAction";
 
 // Define the Bank superclass
 export class Bank {
@@ -22,10 +23,10 @@ export class CreditCard extends Bank {
     annualFee: number;
     cashbackPercentage?: number;
     hero: HeroProps[];
-    offers?: Offer[];
+    offers?: OfferProps[];
     featuresAndBenefits?: FeaturesAndBenefitsProps[];
     howItWorks?: HowItWorksProps[];
-    testimonials?: Testimonial[];
+    testimonials?: TestimonialProps[];
     // callToAction: CallToAction;
     // faq?: FAQ[];
 
@@ -39,10 +40,10 @@ export class CreditCard extends Bank {
         annualFee: number,
         cashbackPercentage?: number,
         hero?: HeroProps[],
-        offers?: Offer[],
+        offers?: OfferProps[],
         featuresAndBenefits?: FeaturesAndBenefitsProps[],
         howItWorks?: HowItWorksProps[],
-        testimonials?: Testimonial[],
+        testimonials?: TestimonialProps[],
         // callToAction: CallToAction,
         // faq?: FAQ[]
     ) {
