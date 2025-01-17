@@ -3,7 +3,7 @@ import { InfinityRewardsCard } from "@/app/models/CreditCard";
 export default function FeaturesAndBenefits() {
     return (
         <section>
-
+            <h2>{InfinityRewardsCard.name} Features and Benefits</h2>
             {/* Card 1 */}
             <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
@@ -11,7 +11,7 @@ export default function FeaturesAndBenefits() {
             </a>
                 <div className="p-5">
                     <a href="#">
-                        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{InfinityRewardsCard.featuresAndBenefits?.[0].feature}</h5>
+                        <h4 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{InfinityRewardsCard.featuresAndBenefits?.[0].feature}</h4>
                     </a>
                     <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{InfinityRewardsCard.featuresAndBenefits?.[0].benefit}</p>
                     <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
@@ -30,7 +30,7 @@ export default function FeaturesAndBenefits() {
             </a>
                 <div className="p-5">
                     <a href="#">
-                        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{InfinityRewardsCard.featuresAndBenefits?.[1].feature}</h5>
+                        <h4 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{InfinityRewardsCard.featuresAndBenefits?.[1].feature}</h4>
                     </a>
                     <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{InfinityRewardsCard.featuresAndBenefits?.[1].benefit}</p>
                     <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
@@ -49,7 +49,7 @@ export default function FeaturesAndBenefits() {
             </a>
                 <div className="p-5">
                     <a href="#">
-                        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{InfinityRewardsCard.featuresAndBenefits?.[2].feature}</h5>
+                        <h4 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{InfinityRewardsCard.featuresAndBenefits?.[2].feature}</h4>
                     </a>
                     <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{InfinityRewardsCard.featuresAndBenefits?.[2].benefit}</p>
                     <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
