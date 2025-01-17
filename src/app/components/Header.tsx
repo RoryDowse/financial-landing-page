@@ -19,15 +19,15 @@ export default function Header() {
 
     return (
         <header>
-            {/* Company Name */}
-            <h1>Empower Bank</h1>
-
             {/* Hamburger Menu Icon */}
             <div 
                 className="lg:hidden"
                 onClick={toggleMenu}>
                 {menuOpen ? <FaTimes /> : <FaBars />}
             </div>
+
+            {/* Company Name */}
+            <h1>Empower Bank</h1>
 
             {/* Mobile Menu */}
             {/* <nav
