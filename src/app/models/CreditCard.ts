@@ -1,3 +1,4 @@
+import { HeroProps } from "./Hero";
 import { Offer } from "./Offer";
 
 // Define the CreditCard class
@@ -8,6 +9,7 @@ export class CreditCard {
     apr: number;
     annualFee: number;
     cashbackPercentage?: number;
+    hero: HeroProps[];
     offers?: Offer[];
     // features?: Feature[];
     // benefits?: Benefit[];
@@ -24,6 +26,7 @@ export class CreditCard {
         apr: number,
         annualFee: number,
         cashbackPercentage?: number,
+        hero?: HeroProps[],
         offers?: Offer[],
         // features?: Feature[],
         // benefits?: Benefit[],
@@ -39,6 +42,7 @@ export class CreditCard {
         this.apr = apr;
         this.annualFee = annualFee;
         this.cashbackPercentage = cashbackPercentage;
+        this.hero = hero || [];
         this.offers = offers;
         // this.features = features;
         // this.benefits = benefits;
@@ -58,6 +62,16 @@ export const InfinityRewardsCard = new CreditCard(
     350,
     5
 );
+
+InfinityRewardsCard.hero = [
+    {
+        name: InfinityRewardsCard.name,
+        applyNowLink: InfinityRewardsCard.link,
+        featureOne: "Earn a $500 welcome bonus when you spend $1,000 in the first 3 months.",
+        featureTwo: `Get limitless ${InfinityRewardsCard.cashbackPercentage}% cashback on every purchase.`,
+        annualFee: InfinityRewardsCard.annualFee,
+    },
+];
 
 // Dynamically assign offers to the Infinity Rewards Credit Card
 InfinityRewardsCard.offers = [
