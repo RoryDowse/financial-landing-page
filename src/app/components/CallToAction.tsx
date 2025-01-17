@@ -1,3 +1,13 @@
+import { InfinityRewardsCard } from "@/app/models/CreditCard";
+
 export default function CallToAction() {
-    return <div>Call To Action</div>;
+    return (
+        <section>
+            <h3>{InfinityRewardsCard.callToAction?.[0].name}</h3>
+            <p>{InfinityRewardsCard.callToAction?.[0].description}</p>
+            <button><a href={InfinityRewardsCard.callToAction?.[0].applyNowLink} aria-label="Apply Now for the {InfinityRewardsCard.callToAction?.[0].name} Credit Card">Apply Now</a></button>
+            <br />
+            <a href={InfinityRewardsCard.callToAction?.[0].termsLink} aria-label="{InfinityRewardsCard.callToAction?.[0].name} Terms and Conditions">Terms and Conditions</a>
+        </section>
+    )
 }

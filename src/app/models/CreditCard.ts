@@ -27,7 +27,7 @@ export class CreditCard extends Bank {
     featuresAndBenefits?: FeaturesAndBenefitsProps[];
     howItWorks?: HowItWorksProps[];
     testimonials?: TestimonialProps[];
-    // callToAction: CallToAction;
+    callToAction?: CallToActionProps[];
     // faq?: FAQ[];
 
     // Constructor to initialize a CreditCard instance
@@ -44,7 +44,7 @@ export class CreditCard extends Bank {
         featuresAndBenefits?: FeaturesAndBenefitsProps[],
         howItWorks?: HowItWorksProps[],
         testimonials?: TestimonialProps[],
-        // callToAction: CallToAction,
+        callToAction?: CallToActionProps,
         // faq?: FAQ[]
     ) {
         // Assign values to instance properties
@@ -60,7 +60,7 @@ export class CreditCard extends Bank {
         this.featuresAndBenefits = featuresAndBenefits;
         this.howItWorks = howItWorks;
         this.testimonials = testimonials;
-        // this.callToAction = callToAction;
+        this.callToAction = callToAction;
         // this.faq = faq;
     }
 }
@@ -75,7 +75,7 @@ export const InfinityRewardsCard = new CreditCard(
     "",
     24.24,
     350,
-    5
+    5,
 );
 
 InfinityRewardsCard.hero = [
@@ -148,5 +148,14 @@ InfinityRewardsCard.testimonials = [
     {
         name: "Bob Johnson",
         review: "I was skeptical about using a credit card, but Infinity Rewards Credit Card has really made a difference in my spending habits.",
+    },
+];
+
+InfinityRewardsCard.callToAction = [
+    {
+        name: "Apply Today with confidence",
+        description: "Start earning rewards and saving money on your purchases.",
+        applyNowLink: "",
+        termsLink: "",
     },
 ];
