@@ -2,6 +2,7 @@ import { HeroProps } from "./Hero";
 import { Offer } from "./Offer";
 import { FeaturesAndBenefitsProps } from "./FeaturesAndBenefits";
 import { HowItWorksProps } from "./HowItWorks";
+import { Testimonial } from "./Testimonials";
 
 // Define the Bank superclass
 export class Bank {
@@ -24,7 +25,7 @@ export class CreditCard extends Bank {
     offers?: Offer[];
     featuresAndBenefits?: FeaturesAndBenefitsProps[];
     howItWorks?: HowItWorksProps[];
-    // testimonials?: Testimonial[];
+    testimonials?: Testimonial[];
     // callToAction: CallToAction;
     // faq?: FAQ[];
 
@@ -41,7 +42,7 @@ export class CreditCard extends Bank {
         offers?: Offer[],
         featuresAndBenefits?: FeaturesAndBenefitsProps[],
         howItWorks?: HowItWorksProps[],
-        // testimonials?: Testimonial[],
+        testimonials?: Testimonial[],
         // callToAction: CallToAction,
         // faq?: FAQ[]
     ) {
@@ -57,7 +58,7 @@ export class CreditCard extends Bank {
         this.offers = offers;
         this.featuresAndBenefits = featuresAndBenefits;
         this.howItWorks = howItWorks;
-        // this.testimonials = testimonials;
+        this.testimonials = testimonials;
         // this.callToAction = callToAction;
         // this.faq = faq;
     }
@@ -131,5 +132,20 @@ InfinityRewardsCard.howItWorks = [
     {
         redeemMethod: `${InfinityRewardsCard.bankName} Loan Discount`,
         description: `Use your points to earn a discount on personal loans or mortgages offered through ${InfinityRewardsCard.bankName}, helping you save on interest and fees for your financial needs.`,
+    },
+];
+
+InfinityRewardsCard.testimonials = [
+    {
+        name: "John Doe",
+        review: "I've been a loyal customer of Infinity Rewards Credit Card for years. The rewards program has really helped me save money on everyday purchases.",
+    },
+    {
+        name: "Jane Smith",
+        review: "As a small business owner, I've found the rewards program to be a great way to attract new customers and grow my business.",
+    },
+    {
+        name: "Bob Johnson",
+        review: "I was skeptical about using a credit card, but Infinity Rewards Credit Card has really made a difference in my spending habits.",
     },
 ];
