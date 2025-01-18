@@ -5,7 +5,6 @@ import { FaBars, FaTimes, FaSearch, FaArrowLeft, FaEllipsisV } from "react-icons
 import { useState } from "react";
 
 import { InfinityRewardsCard } from "@/app/models/CreditCard";
-import { AllCardsLinks } from "@/app/models/CreditCard";
 import allCardsLinks from "./AllCardsLinks";
 
 export default function Header() {

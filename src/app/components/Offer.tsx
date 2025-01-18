@@ -1,6 +1,7 @@
-import { InfinityRewardsCard } from "@/app/models/CreditCard";
 import { FaGift, FaPercentage } from "react-icons/fa";
 import Link from "next/link";
+
+import { InfinityRewardsCard } from "@/app/models/CreditCard";
 
 export default function OffersPage() {
     return (

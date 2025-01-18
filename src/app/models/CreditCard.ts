@@ -115,32 +115,41 @@ InfinityRewardsCard.offers = [
 
 InfinityRewardsCard.featuresAndBenefits = [
     {
+        image: "/images/credit-card.webp",
         feature: "Techtronics Online Purchases",
         benefit: "Earn exclusive cashback on all purchases made through Techtronics Online, a retailer known for cutting-edge electronics and gadgets.",
+        link: "",
         info: "Techtronics Online is a leading e-commerce store specializing in the latest gadgets and tech accessories. By using your Infinity Rewards Card on their platform, you will unlock cashback rewards, allowing you to save on future tech purchases. This applies to all tech products, including the newest smartphones, laptops, and home electronics. Get the latest gear while enjoying exclusive rewards.",
     },
     {
+        image: "/images/credit-card.webp",
         feature: "UrbanFit Gym Memberships",
         benefit: "Enjoy discounts and exclusive rewards on gym memberships, fitness classes, and personal training sessions at UrbanFit Gyms.",
+        link: "",
         info: "UrbanFit is a nationwide fitness chain offering state-of-the-art gym equipment, group fitness classes, and wellness programs. As a cardholder, you'll gain access to discounted memberships and special offers, making it easier to stay healthy and fit. In addition, you can earn cashback on personal training packages and fitness classes, helping you maximize your fitness goals while saving money.",
     },
     {
+        image: "/images/credit-card.webp",
         feature: "AdventureX Travel Bookings",
         benefit: "Receive bonus points on all travel bookings, including flights, hotels, and vacation packages through AdventureX Travel Agency, a leading adventure travel provider.",
+        link: "",
         info: "AdventureX Travel Agency specializes in curating unique travel experiences for explorers, adventurers, and wanderlust travelers. Whether you're booking a flight, hotel, or an all-inclusive vacation package, you can earn bonus points on every booking made using your Infinity Rewards Card. These points can be redeemed for discounts on future trips, helping you travel more while enjoying exclusive benefits.",
     },
 ];
 
 InfinityRewardsCard.howItWorks = [
     {
+        image: "/images/credit-card.webp",
         redeemMethod: `${InfinityRewardsCard.bankName} Account Credit`,
         description: `Redeem your points directly as a statement credit towards your ${InfinityRewardsCard.bankName} account, reducing your balance or covering a recent purchase.`,
     },
     {
+        image: "/images/credit-card.webp",
         redeemMethod: `${InfinityRewardsCard.bankName} Gift Cards`,
         description: `Convert your points into ${InfinityRewardsCard.bankName}-branded gift cards, which can be used for everyday shopping or given as a thoughtful gift to someone special.`,
     },
     {
+        image: "/images/credit-card.webp",
         redeemMethod: `${InfinityRewardsCard.bankName} Loan Discount`,
         description: `Use your points to earn a discount on personal loans or mortgages offered through ${InfinityRewardsCard.bankName}, helping you save on interest and fees for your financial needs.`,
     },
@@ -166,14 +175,17 @@ InfinityRewardsCard.awards = [
 
 InfinityRewardsCard.testimonials = [
     {
+        image: "/images/credit-card.webp",
         name: "John Doe",
         review: "I've been a loyal customer of Infinity Rewards Credit Card for years. The rewards program has really helped me save money on everyday purchases.",
     },
     {
+        image: "/images/credit-card.webp",
         name: "Jane Smith",
         review: "As a small business owner, I've found the rewards program to be a great way to attract new customers and grow my business.",
     },
     {
+        image: "/images/credit-card.webp",
         name: "Bob Johnson",
         review: "I was skeptical about using a credit card, but Infinity Rewards Credit Card has really made a difference in my spending habits.",
     },
