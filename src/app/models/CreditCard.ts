@@ -1,10 +1,11 @@
 import { HeroProps } from "./Hero";
+import { StickyCTAProps } from "./StickyCTA";
 import { OfferProps } from "./Offer";
 import { FeaturesAndBenefitsProps } from "./FeaturesAndBenefits";
 import { HowItWorksProps } from "./HowItWorks";
 import { TestimonialProps } from "./Testimonials";
 import { CallToActionProps } from "./CallToAction";
-import { FAQ } from "./FAQ";
+import { FAQProps } from "./FAQ";
 
 // Define the Bank superclass
 export class Bank {
@@ -29,7 +30,7 @@ export class CreditCard extends Bank {
     howItWorks?: HowItWorksProps[];
     testimonials?: TestimonialProps[];
     callToAction?: CallToActionProps[];
-    faq?: FAQ[];
+    faq?: FAQProps[];
 
     // Constructor to initialize a CreditCard instance
     constructor(
@@ -46,7 +47,7 @@ export class CreditCard extends Bank {
         howItWorks?: HowItWorksProps[],
         testimonials?: TestimonialProps[],
         callToAction?: CallToActionProps[],
-        faq?: FAQ[]
+        faq?: FAQProps[]
     ) {
         // Assign values to instance properties
         super(bankName);
