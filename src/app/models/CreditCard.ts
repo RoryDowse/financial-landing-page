@@ -157,17 +157,17 @@ InfinityRewardsCard.howItWorks = [
 
 InfinityRewardsCard.awards = [
     {
-        image: "https://cdn.pixabay.com/photo/2017/01/31/14/22/trophy-2023745_1280.png",
+        image: "/images/credit-card.webp",
         name: "Best Rewards Program 2025",
         description: "Awarded for having the best rewards program of 2025, providing unmatched value to customers.",
     },
     {
-        image: "https://cdn.pixabay.com/photo/2016/11/14/02/29/trophy-1820645_1280.png",
+        image: "/images/credit-card.webp",
         name: "Outstanding Customer Satisfaction 2025",
         description: "Recognized for achieving exceptional customer satisfaction and trust in 2025.",
     },
     {
-        image: "https://cdn.pixabay.com/photo/2017/05/24/10/57/cup-2334871_1280.png",
+        image: "/images/credit-card.webp",
         name: "Innovation in Credit Card Features 2025",
         description: "Celebrated for introducing groundbreaking credit card features and benefits in 2025.",
     },
