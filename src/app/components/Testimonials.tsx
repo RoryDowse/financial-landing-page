@@ -9,8 +9,8 @@ export default function Testimonials() {
 
             {/* Testimonial 1 */}
             <Image
-                src="/images/credit-card.webp"
-                alt=""
+                src={`${InfinityRewardsCard.testimonials?.[0].image}`}
+                alt={`${InfinityRewardsCard.testimonials?.[0].name} Image`}
                 width={500}
                 height={500}
             />
@@ -19,8 +19,8 @@ export default function Testimonials() {
 
             {/* Testimonial 2 */}
             <Image
-                src="/images/credit-card.webp"
-                alt=""
+                src={`${InfinityRewardsCard.testimonials?.[1].image}`}
+                alt={`${InfinityRewardsCard.testimonials?.[1].name} Image`}
                 width={500}
                 height={500}
             />
@@ -29,8 +29,8 @@ export default function Testimonials() {
 
             {/* Testimonial 3 */}
             <Image
-                src="/images/credit-card.webp"
-                alt=""
+                src={`${InfinityRewardsCard.testimonials?.[2].image}`}
+                alt={`${InfinityRewardsCard.testimonials?.[2].name} Image`}
                 width={500}
                 height={500}
             />
