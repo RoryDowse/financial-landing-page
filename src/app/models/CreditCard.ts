@@ -66,6 +66,7 @@ export class CreditCard extends Bank {
     }
 }
 
+// Create an instance of the Bank class
 export const EmpowerBank = new Bank("Empower Bank");
 
 // Create an instance of the CreditCard class
@@ -79,6 +80,7 @@ export const InfinityRewardsCard = new CreditCard(
     5,
 );
 
+// Dynamically assign values to instance properties
 InfinityRewardsCard.hero = [
     {
         image: "/images/credit-card.webp",
@@ -90,7 +92,6 @@ InfinityRewardsCard.hero = [
     },
 ];
 
-// Dynamically assign offers to the Infinity Rewards Credit Card
 InfinityRewardsCard.offers = [
     {
         name: `${InfinityRewardsCard.cashbackPercentage}% Rewards Cashback`,
