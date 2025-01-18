@@ -53,17 +53,6 @@ export default function Header() {
                     <FaSearch size={24} />
                 </div>
 
-                {/* Mobile Search */}
-                {/* {searchOpen && (
-                    <div>
-                        <input
-                            type="text"
-                            placeholder="Enter a keyword or topic"
-                        />
-                        <button><FaSearch size={24} /></button>
-                    </div>
-                )} */}
-
                 {/* Log In Button */}
                 <Link href="/">Log In</Link>
             </div>
@@ -72,6 +61,17 @@ export default function Header() {
             <div>
                 {/* Back Link */}
                 <Link href="/"><FaArrowLeft />Back to All Credit Cards</Link>
+
+                {/* Mobile Search */}
+                {searchOpen && (
+                    <div>
+                        <input
+                            type="text"
+                            placeholder="Enter a keyword or topic"
+                        />
+                        <button><FaSearch size={24} /></button>
+                    </div>
+                )}
             </div>
         </header>
     );
