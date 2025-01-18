@@ -17,7 +17,7 @@ export default function Hero() {
             />
             <h2>{InfinityRewardsCard.hero?.[0].name}</h2>
             <Link 
-            href='{InfinityRewardsCard.hero?.[0].applyNowLink}'
+            href={`${InfinityRewardsCard.hero?.[0].applyNowLink}`}
             aria-label={`Apply Now for the ${InfinityRewardsCard.hero?.[0].name} Credit Card`}>
                 Apply Now
             </Link>
