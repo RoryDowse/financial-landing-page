@@ -22,7 +22,7 @@ export class CreditCard extends Bank {
     apr: number;
     annualFee: number;
     cashbackPercentage?: number;
-    hero: HeroProps[];
+    hero?: HeroProps[];
     offers?: OfferProps[];
     featuresAndBenefits?: FeaturesAndBenefitsProps[];
     howItWorks?: HowItWorksProps[];
@@ -44,7 +44,7 @@ export class CreditCard extends Bank {
         featuresAndBenefits?: FeaturesAndBenefitsProps[],
         howItWorks?: HowItWorksProps[],
         testimonials?: TestimonialProps[],
-        callToAction?: CallToActionProps,
+        callToAction?: CallToActionProps[],
         // faq?: FAQ[]
     ) {
         // Assign values to instance properties
@@ -55,7 +55,7 @@ export class CreditCard extends Bank {
         this.apr = apr;
         this.annualFee = annualFee;
         this.cashbackPercentage = cashbackPercentage;
-        this.hero = hero || [];
+        this.hero = hero;
         this.offers = offers;
         this.featuresAndBenefits = featuresAndBenefits;
         this.howItWorks = howItWorks;
