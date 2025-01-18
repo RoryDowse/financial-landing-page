@@ -4,6 +4,7 @@ import { FeaturesAndBenefitsProps } from "./FeaturesAndBenefits";
 import { HowItWorksProps } from "./HowItWorks";
 import { TestimonialProps } from "./Testimonials";
 import { CallToActionProps } from "./CallToAction";
+import { FAQ } from "./FAQ";
 
 // Define the Bank superclass
 export class Bank {
@@ -28,7 +29,7 @@ export class CreditCard extends Bank {
     howItWorks?: HowItWorksProps[];
     testimonials?: TestimonialProps[];
     callToAction?: CallToActionProps[];
-    // faq?: FAQ[];
+    faq?: FAQ[];
 
     // Constructor to initialize a CreditCard instance
     constructor(
@@ -45,7 +46,7 @@ export class CreditCard extends Bank {
         howItWorks?: HowItWorksProps[],
         testimonials?: TestimonialProps[],
         callToAction?: CallToActionProps[],
-        // faq?: FAQ[]
+        faq?: FAQ[]
     ) {
         // Assign values to instance properties
         super(bankName);
@@ -61,7 +62,7 @@ export class CreditCard extends Bank {
         this.howItWorks = howItWorks;
         this.testimonials = testimonials;
         this.callToAction = callToAction;
-        // this.faq = faq;
+        this.faq = faq;
     }
 }
 
@@ -157,5 +158,28 @@ InfinityRewardsCard.callToAction = [
         description: "Start earning rewards and saving money on your purchases.",
         applyNowLink: "",
         termsLink: "",
+    },
+];
+
+InfinityRewardsCard.faq = [
+    {
+        question: "What is the cashback percentage?",
+        answer: `The cashback percentage is ${InfinityRewardsCard.cashbackPercentage}% on all purchases.`,
+    },
+    {
+        question: "What is the annual fee?",
+        answer: `The annual fee is $${InfinityRewardsCard.annualFee}.`,    
+    },
+    {
+        question: "Can I use the card for international travel?",
+        answer: "Yes, you can use the card for international travel.",
+    },
+    {
+        question: "Can I use the card for online shopping?",
+        answer: "Yes, you can use the card for online shopping.",
+    },
+    {
+        question: "Can I use the card for personal loans?",
+        answer: "Yes, you can use the card for personal loans.",
     },
 ];
