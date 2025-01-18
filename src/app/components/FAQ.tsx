@@ -4,6 +4,7 @@ export default function FAQ() {
     return (
         <section>
             <h2>FAQ</h2>
+            
             {/* FAQ 1 */}
             <p>{InfinityRewardsCard.faq?.[0].question}</p>
             <p>{InfinityRewardsCard.faq?.[0].answer}</p>
