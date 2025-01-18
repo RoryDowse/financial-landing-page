@@ -64,6 +64,9 @@ export default function Header() {
 
             {/* Log In Button */}
             <Link href="/">Log In</Link>
+
+            {/* Back Button */}
+            <Link href="/">Back</Link>
         </header>
     );
 }
