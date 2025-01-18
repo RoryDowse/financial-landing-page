@@ -15,7 +15,7 @@ export default function OffersPage() {
                     <p>
                         <Link 
                         href="{InfinityRewardsCard.offers?.[0].link}"
-                        aria-label="{InfinityRewardsCard.offers?.[0].name} Conditions">
+                        aria-label={`${InfinityRewardsCard.offers?.[0].name} Conditions`}>
                             Conditions
                         </Link>
                     </p>
@@ -31,7 +31,7 @@ export default function OffersPage() {
                     <p>
                         <Link 
                         href="{InfinityRewardsCard.offers?.[1].link}"
-                        aria-label="{InfinityRewardsCard.offers?.[1].name} Conditions"
+                        aria-label={`${InfinityRewardsCard.offers?.[1].name} Conditions`}
                         >
                             Conditions
                         </Link>

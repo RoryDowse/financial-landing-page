@@ -6,7 +6,7 @@ export default function StickyCTA() {
             <p>{InfinityRewardsCard.name}</p>
             <a href={InfinityRewardsCard.callToAction?.[0].termsLink}>Terms and Conditions</a>
             <br />
-            <button><a href={InfinityRewardsCard.callToAction?.[0].applyNowLink} aria-label="Apply Now for the {InfinityRewardsCard.callToAction?.[0].name} Credit Card">Apply Now</a></button>
+            <button><a href={InfinityRewardsCard.callToAction?.[0].applyNowLink} aria-label={`Apply Now for the ${InfinityRewardsCard.name}`}>Apply Now</a></button>
         </div>
     )
 }
