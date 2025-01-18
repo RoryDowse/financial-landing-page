@@ -2,17 +2,17 @@ import { InfinityRewardsCard } from "../models/CreditCard"
 
 const allCardsLinks = [
     {
-        name: "Infinity Rewards Card",
-        link: InfinityRewardsCard.link,
+        text: "Infinity Rewards Card",
+        href: InfinityRewardsCard.link,
     },
     // Update the name and link for each card
     {
-        name: "Infinity Rewards Card",
-        link: InfinityRewardsCard.link,
+        text: "Infinity Rewards Card",
+        href: InfinityRewardsCard.link,
     },
     {
-        name: "Infinity Rewards Card",
-        link: InfinityRewardsCard.link,
+        text: "Infinity Rewards Card",
+        href: InfinityRewardsCard.link,
     },
 ]
 

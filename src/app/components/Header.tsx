@@ -1,15 +1,17 @@
 "use client";
 
 import Link from "next/link";
-import { FaBars, FaTimes, FaSearch, FaArrowLeft } from "react-icons/fa";
+import { FaBars, FaTimes, FaSearch, FaArrowLeft, FaEllipsisV } from "react-icons/fa";
 import { useState } from "react";
 
 import { InfinityRewardsCard } from "@/app/models/CreditCard";
-
+import { AllCardsLinks } from "@/app/models/CreditCard";
+import allCardsLinks from "./AllCardsLinks";
 
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
     const [searchOpen, setSearchOpen] = useState(false);
+    const [cardsOpen, setCardsOpen] = useState(false);
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
@@ -18,6 +20,10 @@ export default function Header() {
     const toggleSearch = () => {
         setSearchOpen(!searchOpen);
     };
+
+    const toggleCards = () => {
+        setCardsOpen(!cardsOpen);
+    }
 
     return (
         <header>
@@ -74,6 +80,29 @@ export default function Header() {
             <div>
                 {/* Back Link */}
                 <Link href="/"><FaArrowLeft />View All Cards</Link>
+            </div>
+
+            {/* Cards */}
+            <div>
+                <button
+                    className="cursor-pointer"
+                    onClick={toggleCards}
+                >
+                    <FaEllipsisV />
+                    {cardsOpen && (
+                    <nav
+                        className={`${cardsOpen ? 'lg:block' : 'hidden'} block` }
+                    >
+                        <ul>
+                            {allCardsLinks.map((link, index) => (
+                                <li key={index}>
+                                    <a href={link.href}>{link.text}</a>
+                                </li>
+                            ))}
+                        </ul>
+                    </nav>
+                    )}
+                </button>
             </div>
         </header>
     );
