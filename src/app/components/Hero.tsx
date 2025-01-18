@@ -10,7 +10,7 @@ export default function Hero() {
             <Image
                 // use correct syntax for destructuring in Next.js
                 src={`${InfinityRewardsCard.hero?.[0].image}`} // Public folder root
-                alt='Infinity Rewards Credit Card'
+                alt={`${InfinityRewardsCard.hero?.[0].name} Image`}
                 width={1600}
                 height={900}
                 priority // Preloads image for better performance
@@ -18,7 +18,7 @@ export default function Hero() {
             <h2>{InfinityRewardsCard.hero?.[0].name}</h2>
             <Link 
             href={`${InfinityRewardsCard.hero?.[0].applyNowLink}`}
-            aria-label={`Apply Now for the ${InfinityRewardsCard.hero?.[0].name} Credit Card`}>
+            aria-label={`Apply Now for the ${InfinityRewardsCard.hero?.[0].name}`}>
                 Apply Now
             </Link>
             <p>{InfinityRewardsCard.hero?.[0].featureOne}</p>
