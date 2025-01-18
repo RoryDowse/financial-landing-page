@@ -10,6 +10,7 @@ import HowItWorks from "@components/HowItWorks";
 import Testimonials from "@components/Testimonials";
 import CallToAction from "@components/CallToAction";
 import FAQ from "@components/FAQ";
+import StickyCTA from "@components/StickyCTA";
 import Footer from "@components/Footer";
 
 const Home: NextPage = () => {
@@ -26,6 +27,7 @@ const Home: NextPage = () => {
       <CallToAction />
       <FAQ />
       {/* <Referral /> */}
+      <StickyCTA />
       <Footer />
     </>
   );

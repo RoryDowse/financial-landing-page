@@ -1,5 +1,4 @@
 import { HeroProps } from "./Hero";
-import { StickyCTAProps } from "./StickyCTA";
 import { OfferProps } from "./Offer";
 import { FeaturesAndBenefitsProps } from "./FeaturesAndBenefits";
 import { HowItWorksProps } from "./HowItWorks";
