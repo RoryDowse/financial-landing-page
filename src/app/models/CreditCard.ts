@@ -21,7 +21,9 @@ export class Bank {
 export class CreditCard extends Bank {
     name: string;
     description: string;
-    link: string;
+    pageURL: string;
+    applyLink: string;
+    termsLink: string;
     apr: number;
     annualFee: number;
     cashbackPercentage?: number;
@@ -40,7 +42,9 @@ export class CreditCard extends Bank {
         bankName: string,
         name: string,
         description: string,
-        link: string,
+        pageURL: string,
+        applyLink: string,
+        termsLink: string,
         apr: number,
         annualFee: number,
         cashbackPercentage?: number,
@@ -58,7 +62,9 @@ export class CreditCard extends Bank {
         super(bankName);
         this.name = name;
         this.description = description;
-        this.link = link;
+        this.pageURL = pageURL;
+        this.applyLink = applyLink;
+        this.termsLink = termsLink;
         this.apr = apr;
         this.annualFee = annualFee;
         this.cashbackPercentage = cashbackPercentage;
@@ -83,6 +89,8 @@ export const InfinityRewardsCard = new CreditCard(
     "Infinity Rewards Credit Card",
     "Get rewards for every dollar you spend.",
     "",
+    "",
+    "",
     24.24,
     350,
     5,
@@ -93,7 +101,7 @@ InfinityRewardsCard.hero = [
     {
         image: "/images/credit-card.webp",
         name: InfinityRewardsCard.name,
-        applyNowLink: InfinityRewardsCard.link,
+        applyNowLink: InfinityRewardsCard.applyLink,
         featureOne: "Earn a $500 welcome bonus when you spend $1,000 in the first 3 months.",
         featureTwo: `Get limitless ${InfinityRewardsCard.cashbackPercentage}% cashback on every purchase.`,
         annualFee: InfinityRewardsCard.annualFee,
@@ -104,12 +112,10 @@ InfinityRewardsCard.offers = [
     {
         name: `${InfinityRewardsCard.cashbackPercentage}% Rewards Cashback`,
         description: `Earn unlimited ${InfinityRewardsCard.cashbackPercentage}% cashback on every purchase.`,
-        link: "",
     },
     {
         name: "0% Intro APR",
         description: "Get 0% intro APR for 12 months.",
-        link: "",
     },
 ];
 
@@ -195,8 +201,8 @@ InfinityRewardsCard.callToAction = [
     {
         name: "Apply Today with confidence",
         description: "Start earning rewards and saving money on your purchases.",
-        applyNowLink: "",
-        termsLink: "",
+        applyNowLink: InfinityRewardsCard.applyLink,
+        termsLink: InfinityRewardsCard.termsLink,
     },
 ];
 
