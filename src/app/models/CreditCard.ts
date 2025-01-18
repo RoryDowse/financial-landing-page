@@ -2,6 +2,7 @@ import { HeroProps } from "./Hero";
 import { OfferProps } from "./Offer";
 import { FeaturesAndBenefitsProps } from "./FeaturesAndBenefits";
 import { HowItWorksProps } from "./HowItWorks";
+import { AwardsProps } from "./Awards";
 import { TestimonialProps } from "./Testimonials";
 import { CallToActionProps } from "./CallToAction";
 import { FAQProps } from "./FAQ";
@@ -28,6 +29,7 @@ export class CreditCard extends Bank {
     offers?: OfferProps[];
     featuresAndBenefits?: FeaturesAndBenefitsProps[];
     howItWorks?: HowItWorksProps[];
+    awards?: AwardsProps[];
     testimonials?: TestimonialProps[];
     callToAction?: CallToActionProps[];
     faq?: FAQProps[];
@@ -46,6 +48,7 @@ export class CreditCard extends Bank {
         offers?: OfferProps[],
         featuresAndBenefits?: FeaturesAndBenefitsProps[],
         howItWorks?: HowItWorksProps[],
+        awards?: AwardsProps[],
         testimonials?: TestimonialProps[],
         callToAction?: CallToActionProps[],
         faq?: FAQProps[],
@@ -63,6 +66,7 @@ export class CreditCard extends Bank {
         this.offers = offers;
         this.featuresAndBenefits = featuresAndBenefits;
         this.howItWorks = howItWorks;
+        this.awards = awards;
         this.testimonials = testimonials;
         this.callToAction = callToAction;
         this.faq = faq;
@@ -139,6 +143,24 @@ InfinityRewardsCard.howItWorks = [
     {
         redeemMethod: `${InfinityRewardsCard.bankName} Loan Discount`,
         description: `Use your points to earn a discount on personal loans or mortgages offered through ${InfinityRewardsCard.bankName}, helping you save on interest and fees for your financial needs.`,
+    },
+];
+
+InfinityRewardsCard.awards = [
+    {
+        image: "https://cdn.pixabay.com/photo/2017/01/31/14/22/trophy-2023745_1280.png",
+        name: "Best Rewards Program 2025",
+        description: "Awarded for having the best rewards program of 2025, providing unmatched value to customers.",
+    },
+    {
+        image: "https://cdn.pixabay.com/photo/2016/11/14/02/29/trophy-1820645_1280.png",
+        name: "Outstanding Customer Satisfaction 2025",
+        description: "Recognized for achieving exceptional customer satisfaction and trust in 2025.",
+    },
+    {
+        image: "https://cdn.pixabay.com/photo/2017/05/24/10/57/cup-2334871_1280.png",
+        name: "Innovation in Credit Card Features 2025",
+        description: "Celebrated for introducing groundbreaking credit card features and benefits in 2025.",
     },
 ];
 
