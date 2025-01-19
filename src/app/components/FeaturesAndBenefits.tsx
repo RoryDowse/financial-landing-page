@@ -19,7 +19,7 @@ export default function FeaturesAndBenefits() {
   return (
     <section>
       <h2>{InfinityRewardsCard.name} Features and Benefits</h2>
-      <div className="flex flex-wrap justify-center">
+      <div className="flex flex-wrap justify-center gap-4">
         {InfinityRewardsCard.featuresAndBenefits?.map((feature, index) => (
           <div
             key={index}
