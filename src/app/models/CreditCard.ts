@@ -137,7 +137,7 @@ InfinityRewardsCard.featuresAndBenefits = [
     {
         image: "/images/credit-card.webp",
         feature: "AdventureX Travel Bookings",
-        benefit: "Receive bonus points on all travel bookings, including flights, hotels, and vacation packages through AdventureX Travel Agency, a leading adventure travel provider.",
+        benefit: "Receive bonus points on all travel bookings, including flights, hotels, and vacation packages through AdventureX Travel Agency.",
         link: "",
         info: "AdventureX Travel Agency specializes in curating unique travel experiences for explorers, adventurers, and wanderlust travelers. Whether you're booking a flight, hotel, or an all-inclusive vacation package, you can earn bonus points on every booking made using your Infinity Rewards Card. These points can be redeemed for discounts on future trips, helping you travel more while enjoying exclusive benefits.",
     },
