@@ -1,0 +1,34 @@
+/* Flip Card Container */
+.flip-card {
+    perspective: 1000px; /* Creates 3D perspective */
+  }
+  
+  /* Flip Card Inner Container */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 140%;
+    transition: transform 0.8s; /* Smooth animation */
+    transform-style: preserve-3d;
+  }
+  
+  /* Add rotation when flipped */
+  .flip-card-inner.rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+  
+  /* Front and Back Styles */
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 8px;
+  }
+  
+  /* Backside Transformation */
+  .flip-card-back {
+    transform: rotateY(180deg);
+  }
+  
