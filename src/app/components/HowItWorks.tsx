@@ -1,12 +1,10 @@
 'use client';
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation, Scrollbar, A11y } from "swiper/modules";
+import { Pagination, A11y } from "swiper/modules";
 
 import 'swiper/css';
-import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
 
 import Image from "next/image";
 
@@ -17,15 +15,18 @@ export default function HowItWorks() {
         <section>
             <h2>How To Redeem Your Rewards</h2>
 
+            <div className="custom-pagination"></div>
+
             {/* Swiper */}
             <Swiper
                 // install Swiper modules
-                modules={[Navigation, Pagination, Scrollbar, A11y]}
+                modules={[Pagination, A11y]}
                 spaceBetween={50}
                 slidesPerView={1}
-                navigation
-                pagination={{ clickable: true }}
-                scrollbar={{ draggable: true }}
+                pagination={{ 
+                    clickable: true,
+                    el: '.custom-pagination' // custom pagination element
+                 }}
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log('slide change')}
                 >
@@ -69,15 +70,15 @@ export default function HowItWorks() {
                 {/* Dynamic Slides */}
                 {InfinityRewardsCard.howItWorks?.map((item, index) => (
                     <SwiperSlide key={index}>
-                        <div>
+                        <div className="flex flex-col items-center text-center">
                             <Image
                                 src={item.image}
                                 alt={`${item.redeemMethod} Image`}
                                 width={500}
                                 height={500}
                             />
-                            <p>{item.redeemMethod}</p>
-                            <p>{item.description}</p>
+                            <p className="mt-4 font-bold">{item.redeemMethod}</p>
+                            <p className="mt-2 text-gray-600">{item.description}</p>
                         </div>
                     </SwiperSlide>
                 ))}
