@@ -22,7 +22,6 @@
 .custom-pagination .swiper-pagination-bullet-active {
     width: 18px;
     height: 18px;
-    background-color: #17486c; /* Example accent color */
-    opacity: 1;
+    background-color: #17486c;
     transform: scale(1.01);
 }
