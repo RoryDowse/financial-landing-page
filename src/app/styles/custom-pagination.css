@@ -10,8 +10,8 @@
 
 /* Increase bullet size and spacing */
 .custom-pagination .swiper-pagination-bullet {
-    width: 20px;
-    height: 20px;
+    width: 17px;
+    height: 17px;
     margin: 0 8px;
     border: #17486c 3px solid;
     background-color: white;
@@ -20,9 +20,9 @@
 
 /* Active bullet styling */
 .custom-pagination .swiper-pagination-bullet-active {
-    width: 23px;
-    height: 23px;
-    background-color: #fbde65; /* Example accent color */
+    width: 18px;
+    height: 18px;
+    background-color: #17486c; /* Example accent color */
     opacity: 1;
     transform: scale(1.01);
 }
