@@ -2,7 +2,7 @@ import { InfinityRewardsCard } from "@/app/models/CreditCard";
 
 export default function StickyCTA() {
     return (
-        <div className="sticky bottom-0 bg-blue-900 text-white py-5 pl-3 sm:hidden">
+        <div className="sticky bottom-0 z-10 bg-blue-900 text-white py-5 pl-3 sm:hidden">
             <p className="font-bold">{InfinityRewardsCard.name}</p>
             <a 
                 href={InfinityRewardsCard.callToAction?.[0].termsLink}

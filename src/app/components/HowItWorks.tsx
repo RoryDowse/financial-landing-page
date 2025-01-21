@@ -5,6 +5,7 @@ import { Pagination, A11y } from "swiper/modules";
 
 import 'swiper/css';
 import 'swiper/css/pagination';
+import '../styles/custom-pagination.css'; // import custom pagination styles
 
 import Image from "next/image";
 

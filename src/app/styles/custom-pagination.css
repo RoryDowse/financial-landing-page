@@ -1,0 +1,28 @@
+/* Position the pagination at the top */
+.custom-pagination {
+    position: relative;
+    margin-top: 30px;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+}
+
+/* Increase bullet size and spacing */
+.custom-pagination .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    margin: 0 8px;
+    border: #17486c 3px solid;
+    background-color: white;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Active bullet styling */
+.custom-pagination .swiper-pagination-bullet-active {
+    width: 23px;
+    height: 23px;
+    background-color: #fbde65; /* Example accent color */
+    opacity: 1;
+    transform: scale(1.1);
+}
