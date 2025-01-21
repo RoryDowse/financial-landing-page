@@ -1,14 +1,14 @@
 'use client';
 
-import { Pagination, Navigation, Scrollbar, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-
-import Image from "next/image";
+import { Pagination, Navigation, Scrollbar, A11y } from "swiper/modules";
 
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+
+import Image from "next/image";
 
 import { InfinityRewardsCard } from "@/app/models/CreditCard";
 
@@ -30,7 +30,7 @@ export default function HowItWorks() {
                 onSlideChange={() => console.log('slide change')}
                 >
 
-            {/* Slide One */}
+            {/* Slide One
             <SwiperSlide>
             <Image
                 src={`${InfinityRewardsCard.howItWorks?.[0].image}`}
@@ -43,7 +43,7 @@ export default function HowItWorks() {
             </SwiperSlide>
 
             {/* Slide Two */}
-            <SwiperSlide>
+            {/* <SwiperSlide>
             <Image
                 src={`${InfinityRewardsCard.howItWorks?.[1].image}`}
                 alt={`${InfinityRewardsCard.howItWorks?.[1].redeemMethod} Image`}
@@ -52,10 +52,10 @@ export default function HowItWorks() {
                 />
                 <p>{InfinityRewardsCard.howItWorks?.[1].redeemMethod}</p>
                 <p>{InfinityRewardsCard.howItWorks?.[1].description}</p>
-            </SwiperSlide>
+            </SwiperSlide> */}
 
             {/* Slide Three */}
-            <SwiperSlide>
+            {/* <SwiperSlide>
             <Image
                 src={`${InfinityRewardsCard.howItWorks?.[2].image}`}
                 alt={`${InfinityRewardsCard.howItWorks?.[2].redeemMethod} Image`}
@@ -64,7 +64,23 @@ export default function HowItWorks() {
                 />
                 <p>{InfinityRewardsCard.howItWorks?.[2].redeemMethod}</p>
                 <p>{InfinityRewardsCard.howItWorks?.[2].description}</p>
-            </SwiperSlide>
+            </SwiperSlide> */}
+
+                {/* Dynamic Slides */}
+                {InfinityRewardsCard.howItWorks?.map((item, index) => (
+                    <SwiperSlide key={index}>
+                        <div>
+                            <Image
+                                src={item.image}
+                                alt={`${item.redeemMethod} Image`}
+                                width={500}
+                                height={500}
+                            />
+                            <p>{item.redeemMethod}</p>
+                            <p>{item.description}</p>
+                        </div>
+                    </SwiperSlide>
+                ))}
             </Swiper>
         </section>
     );
