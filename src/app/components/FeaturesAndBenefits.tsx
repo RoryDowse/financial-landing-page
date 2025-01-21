@@ -17,24 +17,24 @@ export default function FeaturesAndBenefits() {
   };
 
   return (
-    <section>
+    <section className="">
       <h2>{InfinityRewardsCard.name} Features and Benefits</h2>
       <div className="flex flex-wrap justify-center gap-4">
         {InfinityRewardsCard.featuresAndBenefits?.map((feature, index) => (
           <div
             key={index}
-            className={`flip-card w-80 h-80 relative`}
+            className={`flip-card w-80 h-80 `}
             onClick={() => handleFlip(index)}
           >
             <div
-              className={`flip-card-inner w-full h-full ${
+              className={`flip-card-inner ${
                 flippedStates[index] ? "rotate-y-180" : ""
               }`}
             >
               {/* Front of Card */}
-              <div className="flip-card-front absolute inset-0 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+              <div className="flip-card-front absolute dark:bg-gray-800">
                 <Image
-                  className="rounded-t-lg"
+                  className="rounded"
                   src={`${feature.image}`}
                   width={500}
                   height={500}

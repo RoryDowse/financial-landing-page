@@ -1,7 +1,7 @@
 /* Flip Card Container */
 .flip-card {
     perspective: 1000px; /* Creates 3D perspective */
-    margin-bottom: 200px;
+    margin-bottom: 190px;
   }
   
   /* Flip Card Inner Container */
