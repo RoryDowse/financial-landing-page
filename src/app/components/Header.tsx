@@ -25,18 +25,18 @@ export default function Header() {
     }
 
     return (
-        <header>
+        <header className="bg-blue-900 text-white p-4">
             {/* First Row */}
-            <div>
+            <div className="flex items-center justify-between">
                 {/* Hamburger Menu Icon */}
                 <div 
                     className="lg:hidden"
                     onClick={toggleMenu}>
-                    {menuOpen ? <FaTimes /> : <FaBars />}
+                    {menuOpen ? <FaTimes size={24} /> : <FaBars size={24}/>}
                 </div>
 
                 {/* Company Name */}
-                <h1>{InfinityRewardsCard.bankName}</h1>
+                <h1 className="text-2xl font-bold">{InfinityRewardsCard.bankName}</h1>
 
                 {/* Mobile Menu */}
                 {/* <nav
@@ -55,46 +55,51 @@ export default function Header() {
                     className="cursor-pointer"
                     onClick={toggleSearch}
                 >
-                    <FaSearch size={24} />
+                    <FaSearch size={18} />
                 </div>
 
                 {/* Log In Button */}
-                <Link href="/">Log In</Link>
+                <button className="bg-blue-500 py-2 px-4 rounded hover:bg-blue-700 transition duration-300 ease-in-out">
+                    <Link href="/">Log In</Link>
+                </button>
             </div>
 
             { /* Mobile Search Row */ }
             <div>
              {searchOpen && (
-                <div>
+                <div className="flex items-center mt-4 border p-2 rounded-md bg-gray-50 shadow-inner">
                     <input
                         type="text"
+                        className="flex-grow text-black border-none outline-none "
                         placeholder="Enter a keyword or topic"
                     />
-                    <button><FaSearch size={24} /></button>
+                    <button className="text-blue-500"><FaSearch size={24} /></button>
                 </div>
             )}
             </div>
 
             { /* Second Row */ }
-            <div>
+            <div className="flex items-center justify-between mt-4">
                 {/* Back Link */}
-                <Link href="/"><FaArrowLeft />View All Cards</Link>
-            </div>
+                <Link href="/" className="flex items-center">
+                    <FaArrowLeft size={22} className="pr-2" 
+                        />
+                            View All Cards
+                </Link>
 
-            {/* Cards */}
-            <div>
+                {/* Cards */}
                 <button
                     className="cursor-pointer"
                     onClick={toggleCards}
                 >
-                    <FaEllipsisV />
+                    <FaEllipsisV size={20} />
                     {cardsOpen && (
                     <nav
-                        className={`${cardsOpen ? 'lg:block' : 'hidden'} block` }
+                        className={`${cardsOpen ? 'lg:block' : 'hidden'} block absolute top-35 right-0 bg-blue-900 shadow-md rounded-md p-2` }
                     >
                         <ul>
                             {allCardsLinks.map((link, index) => (
-                                <li key={index}>
+                                <li key={index} className="py-2 m-4">
                                     <a href={link.href}>{link.text}</a>
                                 </li>
                             ))}
