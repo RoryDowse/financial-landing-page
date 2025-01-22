@@ -42,7 +42,7 @@ export default function Header() {
 
                 {/* Mobile Menu */}
                 <nav
-                    className={`absolute top-0 left-0 w-full bg-blue-900 shadow-lg transform transition-transform duration-300 ease-in-out ${
+                    className={`absolute top-0 left-0 w-full bg-blue-800 shadow-lg transform transition-transform duration-300 ease-in-out ${
                         menuOpen ? 'translate-y-0' : '-translate-y-full'
                     }`}
                     onClick={toggleMenu}
@@ -79,11 +79,11 @@ export default function Header() {
 
             { /* Mobile Search Row */ }
             <div className={`transition-all duration-300 ease-in-out ${searchOpen ? 'mt-4' : 'mt-0'}`}>
-    <div
-        className={`flex items-center border p-2 rounded-md bg-gray-50 shadow-inner overflow-hidden transition-all duration-300 ease-in-out ${
-            searchOpen ? 'opacity-100 max-h-[200px]' : 'opacity-0 max-h-0'
-        }`}
-    >
+                <div
+                    className={`flex items-center border p-2 rounded-md bg-gray-50 shadow-inner overflow-hidden transition-all duration-300 ease-in-out ${
+                        searchOpen ? 'opacity-100 max-h-[200px]' : 'opacity-0 max-h-0'
+                    }`}
+                >
                     <input
                         type="text"
                         className="flex-grow text-black border-none outline-none "
@@ -103,14 +103,14 @@ export default function Header() {
                 </Link>
 
                 {/* List of Cards */}
-                <button
+                <div
                     className="cursor-pointer"
                     onClick={toggleCards}
                 >
-                    <FaEllipsisV size={20} />
+                    {cardsOpen ? <FaTimes size={20} /> : <FaEllipsisV size={20} />}
                     {cardsOpen && (
                     <nav
-                        className={`${cardsOpen ? 'lg:block' : 'hidden'} block absolute top-35 right-0 bg-blue-900 shadow-md rounded-md p-2` }
+                        className={`${cardsOpen ? 'lg:block' : 'hidden'} block absolute top-35 right-0 bg-blue-800 shadow-md rounded-md p-2` }
                     >
                         <ul>
                             {allCardsLinks.map((link, index) => (
@@ -121,7 +121,7 @@ export default function Header() {
                         </ul>
                     </nav>
                     )}
-                </button>
+                </div>
             </div>
         </header>
     );
