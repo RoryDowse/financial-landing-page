@@ -103,7 +103,7 @@ export default function Header() {
                 </Link>
 
                 {/* List of Cards */}
-                <div
+                <button
                     className="cursor-pointer"
                     onClick={toggleCards}
                 >
@@ -121,7 +121,7 @@ export default function Header() {
                         </ul>
                     </nav>
                     )}
-                </div>
+                </button>
             </div>
         </header>
     );
