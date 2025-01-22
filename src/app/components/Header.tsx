@@ -41,16 +41,27 @@ export default function Header() {
                 </Link>
 
                 {/* Mobile Menu */}
-                {/* <nav
-                    className={`${menuOpen ? 'lg:block' : 'hidden'} block` }
+                <nav
+                    className={`absolute top-0 left-0 w-full bg-blue-900 shadow-lg transform transition-transform duration-300 ease-in-out ${
+                        menuOpen ? 'translate-y-0' : '-translate-y-full'
+                    }`}
+                    onClick={toggleMenu}
                 >
-                    <ul>
+                    <div className="flex items-center justify-between p-4">
+                        <Link href="/">
+                            <h1 className="text-2xl font-bold">{InfinityRewardsCard.bankName}</h1>
+                        </Link>
+                        <button onClick={toggleMenu}>
+                            <FaTimes size={24} />
+                        </button>
+                    </div>
+                    <ul className="flex flex-col items-center py-4 space-y-4">
                         <li><Link href="/">Home</Link></li>
                         <li><Link href="/">About</Link></li>
                         <li><Link href="/">Services</Link></li>
                         <li><Link href="/">Contact</Link></li>
                     </ul>
-                </nav> */}
+                </nav>
 
                 {/* Search Icon */}
                 <div
