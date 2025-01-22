@@ -78,9 +78,12 @@ export default function Header() {
             </div>
 
             { /* Mobile Search Row */ }
-            <div>
-             {searchOpen && (
-                <div className="flex items-center mt-4 border p-2 rounded-md bg-gray-50 shadow-inner">
+            <div className={`transition-all duration-300 ease-in-out ${searchOpen ? 'mt-4' : 'mt-0'}`}>
+    <div
+        className={`flex items-center border p-2 rounded-md bg-gray-50 shadow-inner overflow-hidden transition-all duration-300 ease-in-out ${
+            searchOpen ? 'opacity-100 max-h-[200px]' : 'opacity-0 max-h-0'
+        }`}
+    >
                     <input
                         type="text"
                         className="flex-grow text-black border-none outline-none "
@@ -88,7 +91,6 @@ export default function Header() {
                     />
                     <button className="text-blue-500"><FaSearch size={24} /></button>
                 </div>
-            )}
             </div>
 
             { /* Second Row */ }
@@ -100,7 +102,7 @@ export default function Header() {
                             View All Cards
                 </Link>
 
-                {/* Cards */}
+                {/* List of Cards */}
                 <button
                     className="cursor-pointer"
                     onClick={toggleCards}
