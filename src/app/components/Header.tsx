@@ -36,7 +36,9 @@ export default function Header() {
                 </div>
 
                 {/* Company Name */}
-                <h1 className="text-2xl font-bold">{InfinityRewardsCard.bankName}</h1>
+                <Link href="/">
+                    <h1 className="text-2xl font-bold">{InfinityRewardsCard.bankName}</h1>
+                </Link>
 
                 {/* Mobile Menu */}
                 {/* <nav
