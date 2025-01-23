@@ -5,25 +5,49 @@ import Link from "next/link";
 import { InfinityRewardsCard } from "@/app/models/CreditCard";
 
 export default function Hero() {
+    const heroCard = InfinityRewardsCard.hero?.[0];
+
     return (
-        <section>
+        <section className="relative bg-gray-100 text-gray-800 px-6 py-12 lg:px-12 lg:py-24">
+            {heroCard?.image && (
             <Image
                 // use correct syntax for destructuring in Next.js
-                src={`${InfinityRewardsCard.hero?.[0].image}`} // Public folder root
-                alt={`${InfinityRewardsCard.hero?.[0].name} Image`}
+                src={`${heroCard.image}`}
+                alt={`${heroCard.name} Image`}
                 width={1600}
                 height={900}
                 priority // Preloads image for better performance
+                className="object-cover w-full h-full"
+                loading="eager" // Ensures above-the-fold content is loaded immediately
+                quality={90} // Serve high-quality images
             />
-            <h2>{InfinityRewardsCard.hero?.[0].name}</h2>
-            <Link 
-            href={`${InfinityRewardsCard.hero?.[0].applyNowLink}`}
-            aria-label={`Apply Now for the ${InfinityRewardsCard.hero?.[0].name}`}>
-                Apply Now
-            </Link>
-            <p>{InfinityRewardsCard.hero?.[0].featureOne}</p>
-            <p>{InfinityRewardsCard.hero?.[0].featureTwo}</p>
-            <p>Annual Fee: ${InfinityRewardsCard.annualFee}</p>
+            )}
+
+            {/* Hero Content */}
+            <div className="mt-8 text-center lg:text-left">
+                <h2 className="text-3xl lg:text-5xl font-bold mb-4">
+                    {heroCard?.name || "Infinity Rewards Card"}
+                </h2>
+                <p className="text-lg lg:text-xl text-gray-600 mb-6">
+                    {heroCard?.featureOne || "Enjoy exclusive benefits and rewards tailored for you."}
+                </p>
+                <p className="text-lg lg:text-xl text-gray-600 mb-6">
+                    {heroCard?.featureTwo || "No annual fees for the first year, and amazing cash-back offers."}
+                </p>
+                <p className="text-lg font-semibold text-gray-700 mb-4">
+                    Annual Fee: ${InfinityRewardsCard.annualFee || "0"}
+                </p>
+
+                {/* Call to Action */}
+                    <Link
+                        href={heroCard?.applyNowLink ?? '/'}
+                        aria-label={`Apply Now for the ${heroCard?.name}`}
+                    >
+                        <button className="bg-blue-600 text-white py-4 px-8 rounded-lg shadow-md hover:bg-blue-700 transition">
+                            Apply Now
+                        </button>
+                    </Link>
+            </div>
         </section>
     );
 }

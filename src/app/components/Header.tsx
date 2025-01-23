@@ -37,6 +37,7 @@ export default function Header() {
 
                 {/* Company Name */}
                 <Link href="/">
+                    {/* update to SVG logo*/}
                     <h1 className="text-2xl font-bold">{InfinityRewardsCard.bankName}</h1>
                 </Link>
 
