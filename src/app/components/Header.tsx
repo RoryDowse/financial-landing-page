@@ -111,7 +111,7 @@ export default function Header() {
                     {cardsOpen ? <FaTimes size={20} /> : <FaEllipsisV size={20} />}
                     {cardsOpen && (
                     <nav
-                        className={`${cardsOpen ? 'lg:block' : 'hidden'} block absolute top-35 right-0 bg-blue-800 shadow-md rounded-md p-2` }
+                        className={`${cardsOpen ? 'lg:block' : 'hidden'} block absolute top-35 right-0 bg-blue-800 shadow-md rounded-md p-2 z-10` }
                     >
                         <ul>
                             {allCardsLinks.map((link, index) => (

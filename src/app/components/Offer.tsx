@@ -4,20 +4,22 @@ import Link from "next/link";
 import { InfinityRewardsCard } from "@/app/models/CreditCard";
 
 export default function OffersPage() {
+    const offers = InfinityRewardsCard.offers;
+
     return (
-        <section>
+        <section className="bg-gray-100 px-6 py-12 lg:px-12 lg:py-24">
             <div>
                 <FaGift />
                 <div>
-                    <h3>{InfinityRewardsCard.offers?.[0].name}</h3>
+                    <h3>{offers?.[0].name}</h3>
                     <p>
-                        {InfinityRewardsCard.offers?.[0].description}
+                        {offers?.[0].description}
                     </p>
                     <p>
                         <Link 
-                        href={`${InfinityRewardsCard.applyLink}`}
-                        aria-label={`${InfinityRewardsCard.offers?.[0].name} Conditions`}>
-                            Conditions
+                        href={`${InfinityRewardsCard.termsLink}`}
+                        aria-label={`${offers?.[0].name} Terms and Conditions`}>
+                            Terms & Conditions
                         </Link>
                     </p>
                 </div>
@@ -25,14 +27,14 @@ export default function OffersPage() {
             <div>
                 <FaPercentage />
                 <div>
-                    <h3>{InfinityRewardsCard.offers?.[1].name}</h3>
+                    <h3>{offers?.[1].name}</h3>
                     <p>
-                        {InfinityRewardsCard.offers?.[1].description}
+                        {offers?.[1].description}
                     </p>
                     <p>
                         <Link 
-                        href={`${InfinityRewardsCard.applyLink}`}
-                        aria-label={`${InfinityRewardsCard.offers?.[1].name} Conditions`}
+                        href={`${InfinityRewardsCard.termsLink}`}
+                        aria-label={`${offers?.[1].name} Conditions`}
                         >
                             Conditions
                         </Link>
