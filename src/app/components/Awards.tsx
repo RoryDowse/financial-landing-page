@@ -1,41 +1,31 @@
 import Image from "next/image";
-
 import { InfinityRewardsCard } from "@/app/models/CreditCard";
 
 export default function Awards() {
     return (
-        <section>
-            <h2>Awards</h2>
+        <section className="py-12 px-6 bg-gray-50">
+            <h2 className="text-3xl font-bold text-center mb-12 text-black">Awards</h2>
 
-            {/* Award 1 */}
-            <Image 
-                src={`${InfinityRewardsCard.awards?.[0].image}`} 
-                alt={`${InfinityRewardsCard.awards?.[0].name} Image`} 
-                width={500}
-                height={500}
-            />
-            <p>{InfinityRewardsCard.awards?.[0].name}</p>
-            <p>{InfinityRewardsCard.awards?.[0].description}</p>
-
-            {/* Award 2 */}
-            <Image 
-                src={`${InfinityRewardsCard.awards?.[1].image}`} 
-                alt={`${InfinityRewardsCard.awards?.[1].name}}`} 
-                width={500}
-                height={500}
-            />
-            <p>{InfinityRewardsCard.awards?.[1].name}</p>
-            <p>{InfinityRewardsCard.awards?.[1].description}</p>
-
-            {/* Award 3 */}
-            <Image 
-                src={`${InfinityRewardsCard.awards?.[2].image}`} 
-                alt={`${InfinityRewardsCard.awards?.[2].name} Image`}
-                width={500}
-                height={500}
-            />
-            <p>{InfinityRewardsCard.awards?.[2].name}</p>
-            <p>{InfinityRewardsCard.awards?.[2].description}</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                {InfinityRewardsCard.awards?.map((award, index) => (
+                    <div
+                        key={index}
+                        className="p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+                    >
+                        <div className="flex justify-center">
+                            <Image
+                                src={award.image}
+                                alt={award.name}
+                                width={200}
+                                height={200}
+                                className="rounded-lg"
+                            />
+                        </div>
+                        <p className="text-xl font-bold text-blue-900 mt-4 text-center">{award.name}</p>
+                        <p className="mt-2 text-gray-700 text-center">{award.description}</p>
+                    </div>
+                ))}
+            </div>
         </section>
-    )
+    );
 }
