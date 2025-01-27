@@ -11,7 +11,9 @@ export default function Referral() {
                     <MdGroup size={48} className="mx-auto" />
                 </div>
             </div>
-            <p className="text-gray-700 text-lg mb-6">{referral?.description}</p>
+            <p className="text-gray-700 text-lg mb-6">{referral?.description}
+                <span className="text-blue-700 font-semibold">{referral?.reward}</span>
+            </p>
             <button className="bg-blue-600 text-white font-semibold py-4 px-8 rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-300">
                 <a
                     href={referral?.link}

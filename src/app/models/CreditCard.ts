@@ -232,7 +232,8 @@ InfinityRewardsCard.faq = [
 InfinityRewardsCard.referrals = [
     {
         name: "Refer a Friend",
-        description: `Refer a friend to ${InfinityRewardsCard.name} and you'll both receive an additional $100 welcome bonus when you spend $1,000 in the first 3 months.`,
+        description: `Refer a friend to ${InfinityRewardsCard.name} and `,
+        reward: "you'll both receive an additional $100 welcome bonus when you spend $1,000 in the first 3 months.",
         link: "",
     }
 ];
