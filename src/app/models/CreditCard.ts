@@ -199,7 +199,7 @@ InfinityRewardsCard.testimonials = [
 
 InfinityRewardsCard.callToAction = [
     {
-        name: "Apply Today with confidence",
+        name: "Apply Today With Confidence",
         description: "Start earning rewards and saving money on your purchases.",
         applyNowLink: InfinityRewardsCard.applyLink,
         termsLink: InfinityRewardsCard.termsLink,
