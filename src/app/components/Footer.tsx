@@ -1,38 +1,58 @@
 import { InfinityRewardsCard } from "@/app/models/CreditCard";
 import footerSocial from "./FooterSocial";
 import footerLinks from "./FooterLinks";
+
 export default function Footer() {
     return (
-        <footer>
+        <footer className="bg-gray-800 text-white py-8 px-6 mt-10">
+            <div className="container mx-auto space-y-8">
 
-            {/* Bank name */}
-            <p>{InfinityRewardsCard.bankName}</p>
+                {/* Bank name */}
+                <div className="text-center">
+                    <p className="text-xl font-semibold">{InfinityRewardsCard.bankName}</p>
+                </div>
 
-            {/* Social links */}
-            <nav>
-                <ul>
-                    {footerSocial.map((link, index) => (
-                        <li key={index}>
-                            <a href={link.href}>{link.icon}</a>
-                        </li>
-                    ))}
-                </ul>
-            </nav>
+                {/* Social links */}
+                <div className="flex justify-center space-x-6">
+                    <nav>
+                        <ul className="flex space-x-6">
+                            {footerSocial.map((link, index) => (
+                                <li key={index}>
+                                    <a
+                                        href={link.href}
+                                        className="text-2xl text-white hover:text-blue-700 transition-colors duration-300"
+                                    >
+                                        {link.icon}
+                                    </a>
+                                </li>
+                            ))}
+                        </ul>
+                    </nav>
+                </div>
 
-            {/* Other links */}
-            <nav>
-                <ul>
-                    {footerLinks.map((link, index) => (
-                        <li key={index}>
-                            <a href={link.href}>{link.text}</a>
-                        </li>
-                    ))}
-                </ul>
-            </nav>
+                {/* Other links */}
+                <div className="flex justify-center space-x-6">
+                    <nav>
+                        <ul className="flex space-x-6 text-sm text-center">
+                            {footerLinks.map((link, index) => (
+                                <li key={index}>
+                                    <a
+                                        href={link.href}
+                                        className="text-white hover:text-blue-500 transition-colors duration-300"
+                                    >
+                                        {link.text}
+                                    </a>
+                                </li>
+                            ))}
+                        </ul>
+                    </nav>
+                </div>
 
-            {/* Copyright */}
-            <p>© {new Date().getFullYear()} {InfinityRewardsCard.bankName}. All rights reserved.</p>
-
+                {/* Copyright */}
+                <div className="text-center text-sm mt-6">
+                    <p>© {new Date().getFullYear()} {InfinityRewardsCard.bankName}. All rights reserved.</p>
+                </div>
+            </div>
         </footer>
     );
-};
+}
