@@ -4,7 +4,7 @@ import footerLinks from "./FooterLinks";
 
 export default function Footer() {
     return (
-        <footer className="bg-gray-800 text-white py-8 px-6 mt-10">
+        <footer className="bg-gray-800 text-white py-8 px-6 mt-10 overflow-x-hidden">
             <div className="container mx-auto space-y-8">
 
                 {/* Bank name */}
@@ -13,9 +13,9 @@ export default function Footer() {
                 </div>
 
                 {/* Social links */}
-                <div className="flex justify-center space-x-6">
+                <div className="flex justify-center space-x-4 sm:space-x-6 flex-wrap w-full">
                     <nav>
-                        <ul className="flex space-x-6">
+                        <ul className="flex space-x-4 sm:space-x-6 flex-wrap w-full justify-center">
                             {footerSocial.map((link, index) => (
                                 <li key={index}>
                                     <a
@@ -31,9 +31,9 @@ export default function Footer() {
                 </div>
 
                 {/* Other links */}
-                <div className="flex justify-center space-x-6">
+                <div className="flex justify-center space-x-4 sm:space-x-6 flex-wrap w-full">
                     <nav>
-                        <ul className="flex space-x-6 text-sm text-center">
+                        <ul className="flex space-x-4 sm:space-x-6 flex-wrap w-full justify-center text-md">
                             {footerLinks.map((link, index) => (
                                 <li key={index}>
                                     <a
