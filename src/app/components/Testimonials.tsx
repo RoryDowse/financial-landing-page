@@ -4,7 +4,7 @@ import { InfinityRewardsCard } from "@/app/models/CreditCard";
 
 export default function Testimonials() {
     return (
-        <section className="py-12 px-6 bg-gray-50">
+        <section className="py-8 px-6 bg-gray-50">
             <h2 className="text-3xl font-bold text-center mb-12 text-blue-800">What People Are Saying</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
