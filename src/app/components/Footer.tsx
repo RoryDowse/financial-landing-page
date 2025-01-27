@@ -4,7 +4,7 @@ import footerLinks from "./FooterLinks";
 
 export default function Footer() {
     return (
-        <footer className="bg-gray-800 text-white py-8 px-6 mt-10 overflow-x-hidden">
+        <footer className="bg-gray-800 text-white py-8 px-6 overflow-x-hidden">
             <div className="container mx-auto space-y-8">
 
                 {/* Bank name */}

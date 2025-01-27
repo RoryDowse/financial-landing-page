@@ -43,7 +43,7 @@ export default function Hero() {
                         href={heroCard?.applyNowLink ?? '/'}
                         aria-label={`Apply Now for the ${heroCard?.name}`}
                     >
-                        <button className="bg-blue-600 text-white py-4 px-8 rounded-lg shadow-md hover:bg-blue-700 transition">
+                        <button className="bg-blue-600 mt-4 text-white py-4 px-8 rounded-lg shadow-md hover:bg-blue-700 transition">
                             Apply Now
                         </button>
                     </Link>
