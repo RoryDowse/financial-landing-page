@@ -4,7 +4,7 @@ export default function StickyCTA() {
     const callToAction = InfinityRewardsCard.callToAction?.[0];
 
     return (
-        <div className="sticky bottom-0 z-10 bg-blue-900 text-white py-5 px-4 sm:hidden">
+        <div className="sticky bottom-0 z-10 bg-blue-900 text-white py-3 px-4 sm:hidden">
             <div className="flex items-center justify-between">
                 {/* Text Section */}
                 <div className="space-y-2">
