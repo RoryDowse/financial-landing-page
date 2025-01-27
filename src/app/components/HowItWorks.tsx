@@ -15,7 +15,7 @@ export default function HowItWorks() {
                 How To Redeem Your Rewards
             </h2>
 
-            <div className="custom-pagination mb-8"></div>
+            <div className="custom-pagination mb-6 text-center"></div>
 
             <Swiper
                 modules={[Pagination, A11y]}
