@@ -8,7 +8,7 @@ export default function Hero() {
     const heroCard = InfinityRewardsCard.hero?.[0];
 
     return (
-        <section className="relative bg-gray-100 text-gray-800 px-6 py-12 lg:px-12 lg:py-24">
+        <section className="relative bg-gray-100 text-gray-800 px-6 py-8 lg:px-12 lg:py-24">
             {heroCard?.image && (
             <Image
                 // use correct syntax for destructuring in Next.js
@@ -43,7 +43,7 @@ export default function Hero() {
                         href={heroCard?.applyNowLink ?? '/'}
                         aria-label={`Apply Now for the ${heroCard?.name}`}
                     >
-                        <button className="bg-blue-600 mt-4 text-white font-bold py-4 px-8 rounded-lg shadow-md hover:bg-blue-700 transition">
+                        <button className="bg-blue-600 mt-2 text-white font-bold py-4 px-8 rounded-lg shadow-md hover:bg-blue-700 transition">
                             Apply Now
                         </button>
                     </Link>
