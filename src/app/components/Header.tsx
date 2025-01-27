@@ -38,7 +38,7 @@ export default function Header() {
                 {/* Company Name */}
                 <Link href="/">
                     {/* update to SVG logo*/}
-                    <h1 className="text-2xl font-bold">{InfinityRewardsCard.bankName}</h1>
+                    <p className="text-2xl font-bold">{InfinityRewardsCard.bankName}</p>
                 </Link>
 
                 {/* Mobile Menu */}
@@ -50,7 +50,7 @@ export default function Header() {
                 >
                     <div className="flex items-center justify-between p-4">
                         <Link href="/">
-                            <h1 className="text-2xl font-bold">{InfinityRewardsCard.bankName}</h1>
+                            <p className="text-2xl font-bold">{InfinityRewardsCard.bankName}</p>
                         </Link>
                         <button onClick={toggleMenu}>
                             <FaTimes size={24} />
