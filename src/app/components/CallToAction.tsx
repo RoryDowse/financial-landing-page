@@ -7,7 +7,7 @@ export default function CallToAction() {
         <section className="bg-blue-900 text-white py-12 px-6 text-center">
             <h3 className="text-4xl font-bold mb-8">{callToAction?.name}</h3>
             <p className="text-lg text-yellow-400 mb-6">{callToAction?.description}</p>
-            <button className="bg-yellow-400 text-blue-900 font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-yellow-300 transition-colors duration-300">
+            <button className="bg-yellow-400 text-blue-900 font-semibold py-4 px-6 rounded-lg shadow-md hover:bg-yellow-300 transition-colors duration-300">
                 <a
                     href={callToAction?.applyNowLink}
                     aria-label={`Apply Now for the ${InfinityRewardsCard.name} Credit Card`}
