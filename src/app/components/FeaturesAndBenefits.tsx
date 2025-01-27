@@ -49,7 +49,7 @@ export default function FeaturesAndBenefits() {
                   <p className="text-gray-700 dark:text-gray-400">
                     {feature.benefit}
                   </p>
-                  <button className="mt-4 px-4 py-2 text-sm font-bold font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:ring-blue-800">
+                  <button className="mt-4 px-5 py-3 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:ring-blue-800">
                     Read more
                   </button>
                 </div>
