@@ -8,13 +8,16 @@ export default function CallToAction() {
     return (
         <section className="bg-blue-900 text-white py-12 px-6 text-center">
             <h3 className="text-4xl font-bold mb-10">{callToAction?.name}</h3>
-            <Image
-                src={InfinityRewardsCard.hero?.[0].image || ""}
-                alt={InfinityRewardsCard.hero?.[0].name || ""}
-                width={1000}
-                height={500}
-                className="mb-6 mx-auto"
-            />
+            <div className="relative w-full h-full">
+                <Image
+                    src={InfinityRewardsCard.hero?.[0].image || ""}
+                    alt={InfinityRewardsCard.hero?.[0].name || ""}
+                    width={1000}
+                    height={500}
+                    className="mb-6 mx-auto object-cover w-full h-full rounded-2xl"
+                />
+                <div className="absolute inset-0 bg-gradient-to-tr from-white to-transparent to-60% opacity-40 rounded-2xl pointer-events-none"></div>
+            </div>
             <p className="text-xl text-yellow-400 mb-6">{callToAction?.description}</p>
             <button className="bg-yellow-400 text-blue-900 text-lg font-bold mt-4 py-4 px-6 rounded-lg shadow-md hover:bg-yellow-300 transition-colors duration-300">
                 <a

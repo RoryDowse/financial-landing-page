@@ -9,19 +9,23 @@ export default function Hero() {
 
     return (
         <section className="relative bg-gray-100 text-gray-800 px-6 py-8 lg:px-12 lg:py-24">
-            {heroCard?.image && (
-            <Image
-                // use correct syntax for destructuring in Next.js
-                src={`${heroCard.image}`}
-                alt={`${heroCard.name} Image`}
-                width={1600}
-                height={900}
-                priority // Preloads image for better performance
-                className="object-cover w-full h-full"
-                loading="eager" // Ensures above-the-fold content is loaded immediately
-                quality={90} // Serve high-quality images
-            />
-            )}
+            <div className="relative w-full h-full">
+                {heroCard?.image && (
+                <Image
+                    // use correct syntax for destructuring in Next.js
+                    src={`${heroCard.image}`}
+                    alt={`${heroCard.name} Image`}
+                    width={1600}
+                    height={900}
+                    priority // Preloads image for better performance
+                    className="object-cover w-full h-full border-t-yellow-400 border-t-2 border-r-yellow-400 border-r-2 rounded-2xl shadow-xl"
+                    loading="eager" // Ensures above-the-fold content is loaded immediately
+                    quality={90} // Serve high-quality images
+                />
+                )}
+                {/* Gradient overlay */}
+                <div className="absolute inset-0 bg-gradient-to-tr from-white to-transparent to-60% opacity-60 rounded-2xl pointer-events-none"></div>
+            </div>
 
             {/* Hero Content */}
             <div className="mt-8 text-center lg:text-left">
