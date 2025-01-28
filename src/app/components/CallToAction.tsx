@@ -8,13 +8,13 @@ export default function CallToAction() {
     return (
         <section className="bg-blue-900 text-white py-12 px-6 text-center">
             <h3 className="text-4xl font-bold mb-10">{callToAction?.name}</h3>
-            <div className="relative w-full h-full">
+            <div className="relative w-full h-full mb-8">
                 <Image
                     src={InfinityRewardsCard.hero?.[0].image || ""}
                     alt={InfinityRewardsCard.hero?.[0].name || ""}
                     width={1000}
                     height={500}
-                    className="mb-8 mx-auto object-cover w-full h-full rounded-xl shadow-lg"
+                    className="mx-auto object-cover w-full h-full rounded-xl shadow-lg"
                 />
                 <div className="absolute inset-0 bg-gradient-to-tr from-white to-transparent to-60% opacity-40 rounded-xl pointer-events-none"></div>
             </div>
