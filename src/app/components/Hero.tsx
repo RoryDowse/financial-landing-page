@@ -24,7 +24,7 @@ export default function Hero() {
                 />
                 )}
                 {/* Gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-tr from-white to-transparent to-60% opacity-60 rounded-2xl pointer-events-none"></div>
+                <div className="absolute inset-0 bg-gradient-to-tr from-white to-transparent to-60% opacity-50 rounded-2xl pointer-events-none"></div>
             </div>
 
             {/* Hero Content */}

@@ -99,7 +99,7 @@ export const InfinityRewardsCard = new CreditCard(
 // Dynamically assign values to instance properties
 InfinityRewardsCard.hero = [
     {
-        image: "/images/credit-card.png",
+        image: "/images/infinity-rewards-credit-card.png",
         name: InfinityRewardsCard.name,
         applyNowLink: InfinityRewardsCard.applyLink,
         featureOne: "Earn a $500 welcome bonus when you spend $1,000 in the first 3 months.",
