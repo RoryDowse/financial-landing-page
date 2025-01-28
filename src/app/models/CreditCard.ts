@@ -181,17 +181,17 @@ InfinityRewardsCard.awards = [
 
 InfinityRewardsCard.testimonials = [
     {
-        image: "/images/credit-card.webp",
+        image: "/images/john-doe.webp",
         name: "John Doe",
         review: "I've been a loyal customer of Infinity Rewards Credit Card for years. The rewards program has really helped me save money on everyday purchases.",
     },
     {
-        image: "/images/credit-card.webp",
+        image: "/images/jane-smith.webp",
         name: "Jane Smith",
         review: "As a small business owner, I've found the rewards program to be a great way to attract new customers and grow my business.",
     },
     {
-        image: "/images/credit-card.webp",
+        image: "/images/bob-johnson.webp",
         name: "Bob Johnson",
         review: "I was skeptical about using a credit card, but Infinity Rewards Credit Card has really made a difference in my spending habits.",
     },
