@@ -121,21 +121,21 @@ InfinityRewardsCard.offers = [
 
 InfinityRewardsCard.featuresAndBenefits = [
     {
-        image: "/images/credit-card.webp",
+        image: "/images/techtronics.webp",
         feature: "Techtronics Online Purchases",
         benefit: "Earn exclusive cashback on all purchases made through Techtronics Online, a retailer known for cutting-edge electronics and gadgets.",
         link: "",
         info: "Techtronics Online is a leading e-commerce store specializing in the latest gadgets and tech accessories. By using your Infinity Rewards Card on their platform, you will unlock cashback rewards, allowing you to save on future tech purchases. This applies to all tech products, including the newest smartphones, laptops, and home electronics. Get the latest gear while enjoying exclusive rewards.",
     },
     {
-        image: "/images/credit-card.webp",
+        image: "/images/urbanfit.webp",
         feature: "UrbanFit Gym Memberships",
         benefit: "Enjoy discounts and exclusive rewards on gym memberships, fitness classes, and personal training sessions at UrbanFit Gyms.",
         link: "",
         info: "UrbanFit is a nationwide fitness chain offering state-of-the-art gym equipment, group fitness classes, and wellness programs. As a cardholder, you'll gain access to discounted memberships and special offers, making it easier to stay healthy and fit. In addition, you can earn cashback on personal training packages and fitness classes, helping you maximize your fitness goals while saving money.",
     },
     {
-        image: "/images/credit-card.webp",
+        image: "/images/adventurex.webp",
         feature: "AdventureX Travel Bookings",
         benefit: "Receive bonus points on all travel bookings, including flights, hotels, and vacation packages through AdventureX Travel Agency.",
         link: "",
