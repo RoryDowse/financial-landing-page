@@ -16,9 +16,9 @@ export default function Testimonials() {
                         <Image
                             src={testimonial.image}
                             alt={testimonial.name}
-                            width={100}
-                            height={100}
-                            className="rounded-full w-24 h-24 object-cover"
+                            width={250}
+                            height={250}
+                            className="rounded-full w-32 h-32 object-cover"
                         />
                         <p className="mt-4 text-lg font-semibold text-blue-900">{testimonial.name}</p>
                         <p className="mt-2 text-gray-700 text-center italic">{`"${testimonial.review}"`}</p>
