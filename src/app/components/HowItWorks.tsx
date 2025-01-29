@@ -42,7 +42,7 @@ export default function HowItWorks() {
                                     <div className="text-5xl text-blue-500">
                                         <IconComponent />
                                     </div>
-                                    <p className="mt-4 text-xl font-bold text-gray-800 dark:text-white">
+                                    <p className="mt-4 text-xl font-bold min-h-[3.5rem] text-gray-800 dark:text-white">
                                         {item.redeemMethod || 'Redeem Method'}
                                     </p>
                                     <p className="mt-2 text-gray-600 dark:text-gray-400">

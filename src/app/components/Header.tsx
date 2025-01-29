@@ -66,7 +66,7 @@ export default function Header() {
 
                 {/* Search Icon */}
                 <div
-                    className="cursor-pointer"
+                    className="cursor-pointer lg:hidden"
                     onClick={toggleSearch}
                 >
                     <FaSearch size={18} />
