@@ -10,8 +10,8 @@ import { InfinityRewardsCard } from '@/app/models/CreditCard';
 
 export default function HowItWorks() {
     return (
-        <section className="px-4 py-10 bg-gray-100 dark:bg-gray-900">
-            <h2 className="text-center text-3xl font-bold text-gray-800 dark:text-white mb-6">
+        <section className="px-6 py-12 bg-gray-100 dark:bg-gray-900">
+            <h2 className="text-center text-3xl font-bold text-gray-800 dark:text-white mb-6 lg:mb-12">
                 How To Redeem Your Rewards
             </h2>
 
@@ -45,7 +45,7 @@ export default function HowItWorks() {
                                     <p className="mt-4 text-xl font-bold min-h-[3.5rem] text-gray-800 dark:text-white">
                                         {item.redeemMethod || 'Redeem Method'}
                                     </p>
-                                    <p className="mt-2 text-gray-600 dark:text-gray-400">
+                                    <p className="mt-2 text-gray-600 min-h-[7.5rem] dark:text-gray-400">
                                         {item.description || 'No description available.'}
                                     </p>
                                 </div>

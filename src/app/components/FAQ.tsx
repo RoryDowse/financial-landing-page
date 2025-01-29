@@ -3,7 +3,7 @@ import { InfinityRewardsCard } from "../models/CreditCard"
 export default function FAQ() {
     return (
         <section className="py-12 px-6 bg-gray-50">
-            <h2 className="text-3xl font-bold text-center mb-8 text-black">FAQ</h2>
+            <h2 className="text-3xl font-bold text-center mb-8 lg:mb-12 text-black">FAQ</h2>
 
             <div className="max-w-4xl mx-auto space-y-6">
                 {InfinityRewardsCard.faq?.map((faq, index) => (

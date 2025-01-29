@@ -7,7 +7,7 @@ export default function CallToAction() {
 
     return (
         <section className="bg-blue-900 text-white py-12 px-6 text-center">
-            <h3 className="text-4xl font-bold mb-10">{callToAction?.name}</h3>
+            <h3 className="text-4xl font-bold mb-10 lg:mb-12">{callToAction?.name}</h3>
             <div className="relative w-full h-full mb-8">
                 <Image
                     src={InfinityRewardsCard.hero?.[0].image || ""}

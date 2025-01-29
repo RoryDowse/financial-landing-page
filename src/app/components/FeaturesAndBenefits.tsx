@@ -18,7 +18,7 @@ export default function FeaturesAndBenefits() {
 
   return (
     <section className="bg-gray-50 px-6 py-12">
-      <h2 className="text-3xl lg:text-4xl font-bold text-center text-gray-800 mb-12">
+      <h2 className="text-3xl lg:text-3xl font-bold text-center text-gray-800 mb-12">
         {InfinityRewardsCard.name} Features and Benefits
       </h2>
       <div className="flex flex-wrap justify-center gap-8">

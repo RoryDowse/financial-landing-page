@@ -8,8 +8,8 @@ export default function Hero() {
     const heroCard = InfinityRewardsCard.hero?.[0];
 
     return (
-        <section className="relative bg-gray-100 text-gray-800 px-6 py-8 lg:px-12 lg:py-24">
-            <div className="relative w-full h-full">
+        <section className="relative bg-gray-100 text-gray-800 px-6 py-8 lg:px-12 lg:py-24 lg:flex lg:items-center">
+            <div className="relative w-full h-full lg:w-1/2">
                 {heroCard?.image && (
                 <Image
                     // use correct syntax for destructuring in Next.js
@@ -24,11 +24,11 @@ export default function Hero() {
                 />
                 )}
                 {/* Gradient overlay */}
-                <div className="absolute max-w-[500] max-h-[309] inset-0 bg-gradient-to-tr from-white to-transparent to-60% opacity-50 rounded-2xl pointer-events-none mx-auto"></div>
+                <div className="absolute max-w-[500] max-h-[309] inset-0 bg-gradient-to-tr from-white to-transparent to-60% opacity-50 rounded-2xl pointer-events-none mx-auto lg:mx-0"></div>
             </div>
 
             {/* Hero Content */}
-            <div className="mt-8 text-center lg:text-left">
+            <div className="mt-8 text-center lg:text-left lg:px-16">
                 <h2 className="text-3xl lg:text-5xl font-bold mb-4">
                     {heroCard?.name || "Infinity Rewards Card"}
                 </h2>

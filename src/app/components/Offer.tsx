@@ -8,7 +8,7 @@ export default function OffersPage() {
 
     return (
         <section className="bg-gray-50 px-6 py-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-center text-gray-800 mb-10">
+            <h2 className="text-3xl lg:text-4xl font-bold text-center text-gray-800 mb-10 lg:mb-12">
                 Explore Our Exclusive Offers
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
