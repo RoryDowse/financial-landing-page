@@ -45,7 +45,7 @@ export default function HowItWorks() {
                                     <p className="mt-4 text-xl font-bold min-h-[3.5rem] text-gray-800 dark:text-white">
                                         {item.redeemMethod || 'Redeem Method'}
                                     </p>
-                                    <p className="mt-2 text-gray-600 min-h-[7.5rem] dark:text-gray-400">
+                                    <p className="mt-2 text-gray-600 min-h-[7.5rem] lg:min-h-[5.5rem] dark:text-gray-400">
                                         {item.description || 'No description available.'}
                                     </p>
                                 </div>
