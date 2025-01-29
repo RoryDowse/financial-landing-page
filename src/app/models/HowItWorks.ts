@@ -1,5 +1,5 @@
 export interface HowItWorksProps {
-    image: string;
+    icon: string;
     redeemMethod: string;
     description: string;
 }

@@ -145,17 +145,17 @@ InfinityRewardsCard.featuresAndBenefits = [
 
 InfinityRewardsCard.howItWorks = [
     {
-        image: "/images/credit-card.webp",
+        icon: "AiOutlineDollar",
         redeemMethod: `${InfinityRewardsCard.bankName} Account Credit`,
         description: `Redeem your points directly as a statement credit towards your ${InfinityRewardsCard.bankName} account, reducing your balance or covering a recent purchase.`,
     },
     {
-        image: "/images/credit-card.webp",
+        icon: "AiOutlineGift",
         redeemMethod: `${InfinityRewardsCard.bankName} Gift Cards`,
         description: `Convert your points into ${InfinityRewardsCard.bankName}-branded gift cards, which can be used for everyday shopping or given as a thoughtful gift to someone special.`,
     },
     {
-        image: "/images/credit-card.webp",
+        icon: "AiOutlineFund",
         redeemMethod: `${InfinityRewardsCard.bankName} Loan Discount`,
         description: `Use your points to earn a discount on personal loans or mortgages offered through ${InfinityRewardsCard.bankName}, helping you save on interest and fees for your financial needs.`,
     },
