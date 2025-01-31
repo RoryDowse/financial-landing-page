@@ -7,12 +7,12 @@ const allCardsLinks = [
     },
     // Update the name and link for each card
     {
-        text: "Infinity Rewards Card",
-        href: InfinityRewardsCard.pageURL,
+        text: "Platinum Rewards Card",
+        href: "/",
     },
     {
-        text: "Infinity Rewards Card",
-        href: InfinityRewardsCard.pageURL,
+        text: "Travel Explorer Card",
+        href: "/",
     },
 ]
 
