@@ -25,7 +25,7 @@ export default function Header() {
     }
 
     return (
-        <header className="bg-blue-900 text-white p-4 lg:px-8 lg:pt-8">
+        <header className="bg-blue-900 text-white p-4 lg:px-8 lg:py-6">
             {/* First Row */}
             <div className="flex items-center justify-between">
                 {/* Hamburger Menu Icon */}
