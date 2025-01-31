@@ -65,7 +65,7 @@ export default function Header() {
                 </nav>
 
                 {/* Search and Log In container */}
-                <div className="flex items-center space-x-4 lg:space-x-8 select-none">
+                <div className="flex items-center space-x-4 md:space-x-8 lg:space-x-8 select-none">
                     {/* Search Icon */}
                     <div
                         className="cursor-pointer"
