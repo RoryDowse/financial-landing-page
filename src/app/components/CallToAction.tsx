@@ -12,11 +12,11 @@ export default function CallToAction() {
                 <Image
                     src={InfinityRewardsCard.hero?.[0].image || ""}
                     alt={InfinityRewardsCard.hero?.[0].name || ""}
-                    width={1000}
-                    height={500}
-                    className="mx-auto max-w-[500] max-h-[309] object-cover w-full h-full rounded-xl shadow-lg"
+                    width={500}
+                    height={309}
+                    className="mx-auto object-cover w-full h-full rounded-xl shadow-lg"
                 />
-                <div className="absolute max-w-[500] max-h-[309] inset-0 bg-gradient-to-tr from-white to-transparent to-60% opacity-40 rounded-xl pointer-events-none mx-auto"></div>
+                <div className="absolute inset-0 bg-gradient-to-tr from-white to-transparent to-60% opacity-40 rounded-xl pointer-events-none mx-auto"></div>
             </div>
             <p className="text-xl text-yellow-400 mb-6">{callToAction?.description}</p>
             <button 
