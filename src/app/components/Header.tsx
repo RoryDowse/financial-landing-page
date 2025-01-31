@@ -25,7 +25,7 @@ export default function Header() {
     }
 
     return (
-        <header className="bg-blue-900 text-white p-4">
+        <header className="bg-blue-900 text-white p-4 lg:px-8 lg:pt-8">
             {/* First Row */}
             <div className="flex items-center justify-between">
                 {/* Hamburger Menu Icon */}
@@ -38,7 +38,7 @@ export default function Header() {
                 {/* Company Name */}
                 <Link href="/">
                     {/* update to SVG logo*/}
-                    <p className="text-2xl font-bold">{InfinityRewardsCard.bankName}</p>
+                    <p className="text-2xl font-bold lg:text-4xl">{InfinityRewardsCard.bankName}</p>
                 </Link>
 
                 {/* Mobile Menu */}
