@@ -64,18 +64,21 @@ export default function Header() {
                     </ul>
                 </nav>
 
-                {/* Search Icon */}
-                <div
-                    className="cursor-pointer lg:hidden"
-                    onClick={toggleSearch}
-                >
-                    <FaSearch size={18} />
-                </div>
+                {/* Search and Log In container */}
+                <div className="flex items-center space-x-4 lg:space-x-8">
+                    {/* Search Icon */}
+                    <div
+                        className="cursor-pointer"
+                        onClick={toggleSearch}
+                    >
+                        <FaSearch size={18} />
+                    </div>
 
-                {/* Log In Button */}
-                <button className="bg-blue-500 py-2 px-4 rounded hover:bg-blue-700 transition duration-300 ease-in-out">
-                    <Link href="/">Log In</Link>
-                </button>
+                    {/* Log In Button */}
+                    <button className="bg-blue-500 py-2 px-4 rounded hover:bg-blue-700 transition duration-300 ease-in-out">
+                        <Link href="/">Log In</Link>
+                    </button>
+                </div>
             </div>
 
             { /* Mobile Search Row */ }
