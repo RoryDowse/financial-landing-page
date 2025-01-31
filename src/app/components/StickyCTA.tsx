@@ -17,15 +17,16 @@ export default function StickyCTA() {
                 </div>
 
                 {/* Button Section */}
-                <div>
+                <button
+                    aria-label={`Apply Now for the ${InfinityRewardsCard.name}`}
+                    className="bg-blue-800 text-white font-bold py-3 px-4 rounded hover:bg-blue-700 transition duration-300 ease-in-out"
+                    >
                     <a
                         href={callToAction?.applyNowLink}
-                        aria-label={`Apply Now for the ${InfinityRewardsCard.name}`}
-                        className="bg-blue-500 text-white font-bold py-3 px-4 rounded hover:bg-blue-700 transition duration-300 ease-in-out"
                     >
                         Apply Now
                     </a>
-                </div>
+                </button>
             </div>
         </div>
     );

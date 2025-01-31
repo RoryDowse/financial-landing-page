@@ -50,7 +50,7 @@ export default function FeaturesAndBenefits() {
                     {feature.benefit}
                   </p>
                   <button 
-                    className="mt-4 px-5 py-3 text-sm font-bold text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:ring-blue-800"
+                    className="mt-4 px-5 py-3 text-sm font-bold text-white bg-blue-800 rounded-lg hover:bg-blue-700"
                     aria-label={`Read more about the ${InfinityRewardsCard.name} ${feature.feature} feature`}
                     >
                     Read more

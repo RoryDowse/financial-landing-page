@@ -48,7 +48,7 @@ export default function Hero() {
                         aria-label={`Apply Now for the ${heroCard?.name}`}
                     >
                         <button 
-                            className="bg-blue-600 mt-2 text-white font-bold py-4 px-8 rounded-lg shadow-md hover:bg-blue-700 transition"
+                            className="bg-blue-800 mt-2 text-white font-bold py-4 px-8 rounded-lg shadow-md hover:bg-blue-700 transition"
                             aria-label={`Apply Now for the ${heroCard?.name}`}
                             >
                             Apply Now
