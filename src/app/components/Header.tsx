@@ -65,7 +65,7 @@ export default function Header() {
                 </nav>
 
                 {/* Search and Log In container */}
-                <div className="flex items-center space-x-4 lg:space-x-8">
+                <div className="flex items-center space-x-4 lg:space-x-8 select-none">
                     {/* Search Icon */}
                     <div
                         className="cursor-pointer"
@@ -84,13 +84,13 @@ export default function Header() {
             { /* Mobile Search Row */ }
             <div className={`transition-all duration-300 ease-in-out ${searchOpen ? 'mt-4' : 'mt-0'}`}>
                 <div
-                    className={`flex items-center border p-2 rounded-md bg-gray-50 shadow-inner overflow-hidden transition-all duration-300 ease-in-out ${
+                    className={`flex items-center border p-2 rounded-md bg-gray-50 shadow-inner overflow-hidden transition-all duration-300 ease-in-out lg:max-w-[600px] lg:mx-auto ${
                         searchOpen ? 'opacity-100 max-h-[200px]' : 'opacity-0 max-h-0'
                     }`}
                 >
                     <input
                         type="text"
-                        className="flex-grow text-black border-none outline-none "
+                        className="flex-grow text-black border-none outline-none"
                         placeholder="Enter a keyword or topic"
                     />
                     <button className="text-blue-500"><FaSearch size={24} /></button>
