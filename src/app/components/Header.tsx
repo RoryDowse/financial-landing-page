@@ -99,7 +99,10 @@ export default function Header() {
                         className="flex-grow text-black border-none outline-none"
                         placeholder="Enter a keyword or topic"
                     />
-                    <button className="text-blue-500"><FaSearch size={24} /></button>
+                    <button 
+                        className="text-blue-500"
+                        aria-label="Search"
+                    ><FaSearch size={24} /></button>
                 </div>
             </div>
 
