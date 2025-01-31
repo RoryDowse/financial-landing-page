@@ -14,10 +14,12 @@ export default function Referral() {
             <p className="text-gray-700 text-lg mb-6">{referral?.description}
                 <span className="text-blue-700 font-semibold">{referral?.reward}</span>
             </p>
-            <button className="bg-blue-600 text-white font-semibold py-4 px-8 rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-300">
+            <button 
+                className="bg-blue-600 text-white font-semibold py-4 px-8 rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-300"
+                aria-label={`Refer a Friend to the ${InfinityRewardsCard.name}`}
+                >
                 <a
                     href={referral?.link}
-                    aria-label={`Refer a Friend to the ${InfinityRewardsCard.name}`}
                     className="no-underline"
                 >
                     Refer a Friend

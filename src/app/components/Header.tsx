@@ -52,7 +52,10 @@ export default function Header() {
                         <Link href="/">
                             <p className="text-2xl font-bold">{InfinityRewardsCard.bankName}</p>
                         </Link>
-                        <button onClick={toggleMenu}>
+                        <button 
+                            onClick={toggleMenu}
+                            aria-label={"Toggle Menu"}
+                            >
                             <FaTimes size={24} />
                         </button>
                     </div>
@@ -75,7 +78,10 @@ export default function Header() {
                     </div>
 
                     {/* Log In Button */}
-                    <button className="bg-blue-500 py-2 px-4 rounded hover:bg-blue-700 transition duration-300 ease-in-out">
+                    <button 
+                        className="bg-blue-500 py-2 px-4 rounded hover:bg-blue-700 transition duration-300 ease-in-out"
+                        aria-label="Log In"
+                        >
                         <Link href="/">Log In</Link>
                     </button>
                 </div>
@@ -110,6 +116,7 @@ export default function Header() {
                 <button
                     className="cursor-pointer"
                     onClick={toggleCards}
+                    aria-label="Toggle CreditCards Dropdown Menu"
                 >
                     {cardsOpen ? <FaTimes size={20} /> : <FaEllipsisV size={20} />}
                     {cardsOpen && (

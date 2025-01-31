@@ -19,7 +19,10 @@ export default function CallToAction() {
                 <div className="absolute max-w-[500] max-h-[309] inset-0 bg-gradient-to-tr from-white to-transparent to-60% opacity-40 rounded-xl pointer-events-none mx-auto"></div>
             </div>
             <p className="text-xl text-yellow-400 mb-6">{callToAction?.description}</p>
-            <button className="bg-yellow-400 text-blue-900 text-lg font-bold mt-4 py-4 px-6 rounded-lg shadow-md hover:bg-yellow-300 transition-colors duration-300">
+            <button 
+                className="bg-yellow-400 text-blue-900 text-lg font-bold mt-4 py-4 px-6 rounded-lg shadow-md hover:bg-yellow-300 transition-colors duration-300"
+                aria-label={`Apply Now for the ${InfinityRewardsCard.name} Credit Card`}
+                >
                 <a
                     href={callToAction?.applyNowLink}
                     aria-label={`Apply Now for the ${InfinityRewardsCard.name} Credit Card`}

@@ -15,8 +15,8 @@ export default function Hero() {
                     // use correct syntax for destructuring in Next.js
                     src={`${heroCard.image}`}
                     alt={`${heroCard.name} Image`}
-                    width={1000}
-                    height={500}
+                    width={500}
+                    height={309}
                     priority // Preloads image for better performance
                     className="object-cover max-w-[500] max-h-[309] w-full h-full border-t-yellow-400 border-t-2 border-r-yellow-400 border-r-2 rounded-2xl shadow-xl mx-auto"
                     loading="eager" // Ensures above-the-fold content is loaded immediately
@@ -47,7 +47,10 @@ export default function Hero() {
                         href={heroCard?.applyNowLink ?? '/'}
                         aria-label={`Apply Now for the ${heroCard?.name}`}
                     >
-                        <button className="bg-blue-600 mt-2 text-white font-bold py-4 px-8 rounded-lg shadow-md hover:bg-blue-700 transition">
+                        <button 
+                            className="bg-blue-600 mt-2 text-white font-bold py-4 px-8 rounded-lg shadow-md hover:bg-blue-700 transition"
+                            aria-label={`Apply Now for the ${heroCard?.name}`}
+                            >
                             Apply Now
                         </button>
                     </Link>
