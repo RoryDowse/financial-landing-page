@@ -9,7 +9,7 @@ export default function Hero() {
 
     return (
         <section className="relative bg-gray-100 text-gray-800 px-6 py-8 lg:px-12 lg:py-24 lg:flex lg:items-center">
-            <div className="relative w-full h-full lg:w-1/2">
+            <div className="relative lg:w-1/2">
                 {heroCard?.image && (
                 <Image
                     // use correct syntax for destructuring in Next.js
@@ -18,7 +18,7 @@ export default function Hero() {
                     width={500}
                     height={309}
                     priority // Preloads image for better performance
-                    className="object-cover w-full h-full border-t-yellow-400 border-t-2 border-r-yellow-400 border-r-2 rounded-2xl shadow-xl mx-auto"
+                    className="object-cover border-t-yellow-400 border-t-2 border-r-yellow-400 border-r-2 rounded-2xl shadow-xl mx-auto"
                     loading="eager" // Ensures above-the-fold content is loaded immediately
                     quality={90} // Serve high-quality images
                 />

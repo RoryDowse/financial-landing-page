@@ -1,5 +1,4 @@
 import { NextPage } from "next";
-import Layout from "./layout";
 
 import Header from "@components/Header";
 import Hero from "@components/Hero";
@@ -16,7 +15,7 @@ import Footer from "@components/Footer";
 
 const Home: NextPage = () => {
   return (
-    <Layout>
+    <>
       <Header />
       <Hero />
       <Offer />
@@ -29,7 +28,7 @@ const Home: NextPage = () => {
       <Referral />
       <StickyCTA />
       <Footer />
-    </Layout>
+    </>
   );
 }
 
