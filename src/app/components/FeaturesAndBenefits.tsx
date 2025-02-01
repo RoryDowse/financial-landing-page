@@ -34,7 +34,7 @@ export default function FeaturesAndBenefits() {
               }`}
             >
               {/* Front of Card */}
-              <div className="flip-card-front absolute w-full h-full backface-hidden bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
+              <div className="flip-card-front absolute w-full h-full backface-hidden bg-gray-800 rounded-lg shadow-md overflow-hidden">
                 <Image
                   className="rounded-t-lg"
                   src={`${feature.image}`}
@@ -59,7 +59,7 @@ export default function FeaturesAndBenefits() {
               </div>
 
               {/* Back of Card */}
-              <div className="flip-card-back absolute w-full h-full bg-blue-500 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-md backface-hidden rotate-y-180 flex flex-col justify-center items-center p-6">
+              <div className="flip-card-back absolute w-full h-full bg-gray-800 border border-gray-700 rounded-lg shadow-md backface-hidden rotate-y-180 flex flex-col justify-center items-center p-6">
                 <h3 className="text-lg font-semibold text-white">
                   {feature.feature}
                 </h3>
