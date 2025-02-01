@@ -43,10 +43,10 @@ export default function FeaturesAndBenefits() {
                   alt={`${feature.feature} Image`}
                 />
                 <div className="p-6">
-                  <h3 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">
+                  <h3 className="mb-2 text-lg font-semibold text-white">
                     {feature.feature}
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-400">
+                  <p className="text-gray-100">
                     {feature.benefit}
                   </p>
                   <button 
@@ -63,7 +63,7 @@ export default function FeaturesAndBenefits() {
                 <h3 className="text-lg font-semibold text-white">
                   {feature.feature}
                 </h3>
-                <p className="mt-4 text-gray-200">{feature.info}</p>
+                <p className="mt-4 text-gray-100">{feature.info}</p>
               </div>
             </div>
           </div>
