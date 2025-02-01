@@ -5,7 +5,7 @@ export const metadata = {
   description: "Get rewards for every dollar you spend.",
   openGraph: {
     title: "Infinity Rewards Credit Card | Empower Bank",
-    description: "Earn rewards with every purchase. Sign up now!",
+    description: "Earn rewards with every purchase. Apply now!",
     url: "https://financial-landing-page.vercel.app/",
     type: "website",
     images: [

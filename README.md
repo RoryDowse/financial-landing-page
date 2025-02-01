@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-First, run the development server:
+# Financial Landing Page
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Description
+I built the Financial Landing Page to model a real-world credit card landing page for banks, drawing inspiration from American Express, Chase, and Wells Fargo to balance aesthetics, usability, and performance. The design incorporates sticky call-to-actions, flipping and sliding cards, and a clean layout to enhance user engagement. Built with Next.js, the project leverages server-side rendering for speed, SEO optimization, and Open Graph metadata for discoverability. I applied Object-Oriented Programming (OOP) principles by creating a bank superclass and credit card subclasses for scalability, allowing for future expansion and database integration. Styled with Tailwind CSS and deployed on Vercel, the project showcases modern web development best practices while refining my skills in Next.js, component-driven design, and performance optimization.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Deployed Link: https://financial-landing-page.vercel.app/
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Questions](#questions)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Installation
+1. **Clone the repository**
 
-## Learn More
+   Start by cloning the repository to your local machine using the following command:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   git clone git@github.com:RoryDowse/financial-landing-page.git
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Install dependencies**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   Install the necessary dependencies with npm:
 
-## Deploy on Vercel
+   ```bash
+   npm i
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Run the application**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   Run in development mode:
+
+   ```bash
+   npm run dev
+   ```
+
+## Usage
+
+Please note that all buttons and interactions are for demo purposes and do not perform any action.
+
+1. **View Menu**
+
+    - toggle the menu via the hamburger button (mobile and tablet only).
+
+
+2. **Search Site**
+
+    - toggle the search feature and input text to search the site.
+
+3. **Back to All Cards**
+
+    - return to the previous menu to explore all cards.
+
+4. **View All Cards**
+
+    - toggle the menu to view all cards.
+
+5. **View Product**
+
+    - explore the product with large images in the hero and call to action sections with visually appealing overlay for increased engagement.
+
+6. **Apply Now**
+
+    - apply for the card via multiple calls to action, including hero section, the sticky footer, and the call to action section for increased conversions.
+
+7. **Interactive Cards**
+
+    - Learn more about the product via interactive cards including flip and slide effects for increased user engagement.
+
+
+**Mobile Screenshot:**
+
+![Mobile Screenshot](public/images/mobile-screenshot.png)
+
+**Tablet Screenshot:**
+
+![Tablet Screenshot](public/images/tablet-screenshot.png)
+
+**Desktop Screenshot:**
+
+![Desktop Screenshot](public/images/desktop-screenshot.png)
+
+## License
+This project is licensed under the MIT license.
+
+## Contributing
+**Next.js Docs:** https://nextjs.org/docs
+**Tailwind Docs:** https://v2.tailwindcss.com/docs
+
+## Questions
+Please visit my GitHub profile: https://github.com/RoryDowse.<br>
+For additional questions, please contact me at: rorydowse@hotmail.com.

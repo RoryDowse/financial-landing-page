@@ -5,7 +5,7 @@ import { FaBars, FaTimes, FaSearch, FaArrowLeft, FaEllipsisV } from "react-icons
 import { useState } from "react";
 
 import { InfinityRewardsCard } from "@/app/models/CreditCard";
-import allCardsLinks from "./AllCardsLinks";
+import allCardsLinks from "@components/AllCardsLinks";
 
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -37,7 +37,6 @@ export default function Header() {
 
                 {/* Company Name */}
                 <Link href="/">
-                    {/* update to SVG logo*/}
                     <p className="text-2xl font-bold lg:text-4xl">{InfinityRewardsCard.bankName}</p>
                 </Link>
 
@@ -68,7 +67,7 @@ export default function Header() {
                 </nav>
 
                 {/* Search and Log In container */}
-                <div className="flex items-center space-x-4 md:space-x-8 lg:space-x-8 select-none lg:gap-4">
+                <div className="flex items-center space-x-4 md:space-x-8 lg:space-x-12 select-none">
                     {/* Search Icon */}
                     <div
                         className="cursor-pointer"
