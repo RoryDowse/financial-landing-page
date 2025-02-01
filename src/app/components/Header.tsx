@@ -79,7 +79,7 @@ export default function Header() {
 
                     {/* Log In Button */}
                     <button 
-                        className="bg-blue-800 py-2 px-4 rounded hover:bg-blue-700 transition duration-300 ease-in-out"
+                        className="bg-blue-800 py-3 px-8 rounded hover:bg-blue-700 transition duration-300 ease-in-out"
                         aria-label="Log In"
                         >
                         <Link href="/">Log In</Link>
