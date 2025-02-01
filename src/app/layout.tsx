@@ -1,7 +1,7 @@
 import '@styles/globals.css';
 
 export const metadata = {
-  title: "Infinity Rewards Credit Card",
+  title: "Infinity Rewards Credit Card | Empower Bank",
   description: "Get rewards for every dollar you spend.",
   openGraph: {
     title: "Infinity Rewards Credit Card | Empower Bank",
@@ -11,8 +11,8 @@ export const metadata = {
     images: [
       {
         url: "https://financial-landing-page.vercel.app/images/infinity-rewards-credit-card.webp",
-        width: 1200,
-        height: 630,
+        width: 1100,
+        height: 600,
         alt: "Infinity Rewards Credit Card",
       },
     ],
