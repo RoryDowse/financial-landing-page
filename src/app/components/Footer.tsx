@@ -21,6 +21,9 @@ export default function Footer() {
                                     <a
                                         href={link.href}
                                         className="text-2xl text-white hover:text-blue-700 transition-colors duration-300"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        aria-label={link.ariaLabel}
                                     >
                                         {link.icon}
                                     </a>
