@@ -4,7 +4,7 @@
 # Financial Landing Page
 
 ## Description
-I built the Financial Landing Page to model a real-world credit card landing page for banks, drawing inspiration from American Express, Chase, and Wells Fargo to balance aesthetics, usability, and performance. The design incorporates sticky call-to-actions, flipping and sliding cards, and a clean layout to enhance user engagement. Built with Next.js, the project leverages server-side rendering for speed, SEO optimization, and Open Graph metadata for discoverability. I applied Object-Oriented Programming (OOP) principles by creating a bank superclass and credit card subclasses for scalability, allowing for future expansion and database integration. Styled with Tailwind CSS and deployed on Vercel, the project showcases modern web development best practices while refining my skills in Next.js, component-driven design, and performance optimization.
+I built the Financial Landing Page to model a real-world credit card landing page for banks, drawing inspiration from American Express, Chase, and Wells Fargo to balance aesthetics, usability, and performance. The design incorporates sticky call-to-actions, flipping and sliding cards, and a clean layout to enhance user engagement. Built with Next.js, the project leverages server-side rendering for speed, SEO optimization, and Open Graph metadata for discoverability. I applied Object-Oriented Programming (OOP) principles by creating a bank superclass and a credit card subclass for scalability, allowing for future expansion and database integration. Styled with Tailwind CSS and deployed on Vercel, the project showcases modern web development best practices while refining my skills in Next.js, component-driven design, and performance optimization.
 
 Deployed Link: https://financial-landing-page.vercel.app/
 
@@ -90,7 +90,7 @@ Please note that all buttons and interactions are for demo purposes and do not p
 This project is licensed under the MIT license.
 
 ## Contributing
-**Next.js Docs:** https://nextjs.org/docs
+**Next.js Docs:** https://nextjs.org/docs<br>
 **Tailwind Docs:** https://v2.tailwindcss.com/docs
 
 ## Questions
