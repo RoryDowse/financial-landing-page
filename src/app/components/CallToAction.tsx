@@ -8,15 +8,15 @@ export default function CallToAction() {
     return (
         <section className="bg-blue-900 text-white py-12 px-6 text-center">
             <h3 className="text-4xl font-bold mb-10 lg:mb-12">{callToAction?.name}</h3>
-            <div className="relative lg:w-1/2 lg:h-1/2 mb-8 mx-auto">
+            <div className="relative w-full h-full md:w-1/2 md:h-1/2 lg:w-1/2 lg:h-1/2 mb-8 mx-auto">
                 <Image
                     src={InfinityRewardsCard.hero?.[0].image || ""}
                     alt={InfinityRewardsCard.hero?.[0].name || ""}
                     width={500}
                     height={309}
-                    className="mx-auto object-cover lg:w-1/2  lg:h-1/2 rounded-xl shadow-lg"
+                    className="mx-auto object-cover w-full md:w-1/2 md:h-1/2 lg:w-1/2 lg:h-1/2 rounded-xl shadow-lg"
                 />
-                <div className="absolute inset-0 bg-gradient-to-tr from-white to-transparent to-60% opacity-40 rounded-xl pointer-events-none mx-auto lg:w-1/2"></div>
+                <div className="absolute inset-0 bg-gradient-to-tr from-white to-transparent to-60% opacity-40 rounded-xl pointer-events-none mx-auto w-full h-full md:w-1/2 lg:w-1/2"></div>
             </div>
             <p className="text-xl text-yellow-400 mb-6">{callToAction?.description}</p>
             <button 
