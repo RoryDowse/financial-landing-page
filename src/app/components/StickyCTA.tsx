@@ -21,11 +21,7 @@ export default function StickyCTA() {
                     aria-label={`Apply Now for the ${InfinityRewardsCard.name}`}
                     className="bg-blue-800 text-white font-bold py-3 px-4 rounded hover:bg-blue-700 transition duration-300 ease-in-out"
                     >
-                    <a
-                        href={callToAction?.applyNowLink}
-                    >
                         Apply Now
-                    </a>
                 </button>
             </div>
         </div>
