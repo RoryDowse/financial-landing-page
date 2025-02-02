@@ -18,12 +18,13 @@ export default function Hero() {
                     width={500}
                     height={309}
                     priority // Preloads image for better performance (no need for eager loading)
-                    className="object-cover border-t-yellow-400 border-t-2 border-r-yellow-400 border-r-2 rounded-2xl shadow-xl mx-auto"
+                    sizes={"(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"}
+                    className="mx-auto object-cover w-full h-full md:w-1/2 md:h-1/2 lg:w-full lg:h-full border-t-yellow-400 border-t-2 border-r-yellow-400 border-r-2 rounded-2xl shadow-xl"
                     quality={90} // Serve high-quality images
                 />
                 )}
                 {/* Gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-tr from-white to-transparent to-60% opacity-50 rounded-2xl pointer-events-none mx-auto"></div>
+                <div className="absolute inset-0 bg-gradient-to-tr from-white to-transparent to-60% opacity-50 rounded-2xl pointer-events-none mx-auto w-full h-full md:w-1/2 md:h-full lg:w-full lg:h-full"></div>
             </div>
 
             {/* Hero Content */}
