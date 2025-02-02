@@ -43,17 +43,12 @@ export default function Hero() {
                 </p>
 
                 {/* Call to Action */}
-                    <Link
-                        href={heroCard?.applyNowLink ?? '/'}
-                        aria-label={`Apply Now for the ${heroCard?.name}`}
+                <button 
+                    className="bg-blue-800 mt-2 text-white font-bold py-4 px-8 rounded-lg shadow-md hover:bg-blue-700 transition"
+                    aria-label={`Apply Now for the ${heroCard?.name}`}
                     >
-                        <button 
-                            className="bg-blue-800 mt-2 text-white font-bold py-4 px-8 rounded-lg shadow-md hover:bg-blue-700 transition"
-                            aria-label={`Apply Now for the ${heroCard?.name}`}
-                            >
-                            Apply Now
-                        </button>
-                    </Link>
+                    Apply Now
+                </button>
             </div>
         </section>
     );

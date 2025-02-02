@@ -23,13 +23,7 @@ export default function CallToAction() {
                 className="bg-yellow-400 text-blue-900 text-lg font-bold mt-4 py-4 px-8 rounded-lg shadow-md hover:bg-yellow-300 transition-colors duration-300"
                 aria-label={`Apply Now for the ${InfinityRewardsCard.name}`}
                 >
-                <a
-                    href={callToAction?.applyNowLink}
-                    aria-label={`Apply Now for the ${InfinityRewardsCard.name}`}
-                    className="no-underline"
-                >
                     Apply Now
-                </a>
             </button>
             <br />
             <a

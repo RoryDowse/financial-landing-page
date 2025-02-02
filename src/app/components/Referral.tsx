@@ -18,12 +18,7 @@ export default function Referral() {
                 className="bg-blue-800 text-white font-semibold py-4 px-8 rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-300"
                 aria-label={`Refer a Friend to the ${InfinityRewardsCard.name}`}
                 >
-                <a
-                    href={referral?.link}
-                    className="no-underline"
-                >
                     Refer a Friend
-                </a>
             </button>
         </section>
     );
