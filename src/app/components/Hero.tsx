@@ -18,7 +18,7 @@ export default function Hero() {
                     width={500}
                     height={309}
                     priority // Preloads image for better performance (no need for eager loading)
-                    // sizes="300px"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="mx-auto object-cover w-full h-full md:w-1/2 md:h-1/2 lg:w-3/4 lg:h-3/4 border-t-yellow-400 border-t-2 border-r-yellow-400 border-r-2 rounded-2xl shadow-xl"
                     quality={90} // Serve high-quality images
                 />
