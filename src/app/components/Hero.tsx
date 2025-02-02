@@ -17,9 +17,8 @@ export default function Hero() {
                     alt={`${heroCard.name} Image`}
                     width={500}
                     height={309}
-                    priority // Preloads image for better performance
+                    priority // Preloads image for better performance (no need for eager loading)
                     className="object-cover border-t-yellow-400 border-t-2 border-r-yellow-400 border-r-2 rounded-2xl shadow-xl mx-auto"
-                    loading="eager" // Ensures above-the-fold content is loaded immediately
                     quality={90} // Serve high-quality images
                 />
                 )}

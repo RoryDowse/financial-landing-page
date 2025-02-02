@@ -73,18 +73,28 @@ Please note that all buttons and interactions are for demo purposes and do not p
 
     - Learn more about the product via interactive cards including flip and slide effects for increased user engagement.
 
+<div style="text-align: center; margin-top: 20px;">
 
 **Mobile Screenshot:**
 
-![Mobile Screenshot](public/images/mobile-screenshot.png)
+<div>
+    <img src="public/images/mobile-screenshot.png" alt="Mobile Screenshot" width="300" style="margin-bottom: 20px;"/>
+</div>
 
 **Tablet Screenshot:**
 
-![Tablet Screenshot](public/images/tablet-screenshot.png)
+<div>
+    <img src="public/images/tablet-screenshot.png" alt="Tablet Screenshot" width="600" style="margin-bottom: 20px;"/>
+</div>
 
 **Desktop Screenshot:**
 
-![Desktop Screenshot](public/images/desktop-screenshot.png)
+<div>
+    <img src="public/images/desktop-screenshot.png" alt="Desktop Screenshot" width="800" style="margin-bottom: 20px;"/>
+</div>
+
+</div>
+
 
 ## License
 This project is licensed under the MIT license.
