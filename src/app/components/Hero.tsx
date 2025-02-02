@@ -20,7 +20,7 @@ export default function Hero() {
                     priority // Preloads image for better performance (no need for eager loading)
                     sizes={"(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"} // Responsive image sizes
                     className="object-cover border-t-yellow-400 border-t-2 border-r-yellow-400 border-r-2 rounded-2xl shadow-xl mx-auto"
-                    quality={90} // Serve high-quality images
+                    quality={80}
                 />
                 )}
                 {/* Gradient overlay */}
