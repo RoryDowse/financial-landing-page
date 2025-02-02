@@ -81,7 +81,7 @@ export default function Header() {
                         className="bg-blue-800 py-2 px-4 lg:py-4 lg:px-6 rounded hover:bg-blue-700 transition duration-300 ease-in-out"
                         aria-label="Log In"
                         >
-                        <Link href="/">Log In</Link>
+                        Log In
                     </button>
                 </div>
             </div>
