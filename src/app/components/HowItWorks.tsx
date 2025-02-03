@@ -22,7 +22,7 @@ export default function HowItWorks() {
                 spaceBetween={20}
                 slidesPerView={1}
                 pagination={{
-                    clickable: true,
+                    clickable: false,
                     el: '.custom-pagination',
                 }}
                 breakpoints={{
