@@ -93,6 +93,12 @@ Please note that all buttons and interactions are for demo purposes and do not p
     <img src="public/images/desktop-screenshot.png" alt="Desktop Screenshot" width="800" style="margin-bottom: 20px;"/>
 </div>
 
+**Google PageSpeed Insights Report (Mobile):**
+
+<div>
+    <img src="public/images/google-pagespeed-insights-mobile.png" alt="Google PageSpeed Insights Report for Mobile" width="800" style="margin-bottom: 20px;"/>
+</div>
+
 </div>
 
 
