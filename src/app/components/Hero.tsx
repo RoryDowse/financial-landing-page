@@ -1,6 +1,5 @@
 // serve optimized images in WebP format with lazy loading and caching
 import Image from "next/image";
-import Link from "next/link";
 
 import { InfinityRewardsCard } from "@/app/models/CreditCard";
 
