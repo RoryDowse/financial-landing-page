@@ -8,7 +8,7 @@ export default function Hero() {
 
     return (
         <section className="relative bg-gray-100 text-gray-800 px-6 py-8 lg:px-12 lg:py-24 lg:flex lg:items-center">
-            <div className="relative lg:w-1/2">
+            <div className="relative sm:w-full sm:h-full md:w-1/2 md:h-1/2 lg:w-1/2 lg:h-1/2 lg:w-1/2">
                 {heroCard?.image && (
                 <Image
                     // use correct syntax for destructuring in Next.js
